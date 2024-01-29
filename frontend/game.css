@@ -1,0 +1,31 @@
+body {
+      background-color: cyan;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      color: white;
+      background-color: #00bcd4;
+    }
+
+    hr {
+      border: 1px solid white;
+      margin: 10px 0;
+    }
+
+    div.links {
+      text-align: center;
+      margin: 20px;
+    }
+
+    div.links a {
+     display: inline-block;
+      margin: 0 10px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
