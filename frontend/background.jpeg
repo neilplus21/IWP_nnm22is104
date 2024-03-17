@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html>
+	<head>
+        <title>DeepAI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css?family=Poppins:400,300,500"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Gudea:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@graph": [
+        {
+            "@type": "Website",
+            "url": "https://deepai.org",
+            "name": "DeepAI",
+            "description": "Artificially intelligent tools for naturally creative humans.",
+            "publisher": {
+                "@type": "Organization",
+                "url": "https://deepai.org",
+                "name": "DeepAI",
+                "legalName": "Deep AI, Inc.",
+                "description": "Artificially intelligent tools for naturally creative humans.",
+                "email": "team@deepai.org",
+                "foundingDate": "April, 20, 2017",
+                "foundingLocation": "California",
+                "sameAs": [
+                    "https://github.com/deepai-org",
+                    "https://angel.co/deepai",
+                    "https://www.linkedin.com/company/deepai/",
+                    "https://twitter.com/DeepAI",
+                    "https://www.crunchbase.com/organization/deepai"
+                ],
+                "founders": [
+                    {
+                        "@type": "Person",
+                        "name": "Kevin Baragona",
+                        "email": "kevin@deepai.org",
+                        "image": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAIoAAAAJDBlYWNlZTZiLTJkYTUtNDcwNy05MjI5LTBiY2JlMTA1M2ZkNA.jpg",
+                        "sameAs": [
+                            "https://www.linkedin.com/in/kevin-baragona-b8671860"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}</script>
+
+
+<script
+  async
+  src="https://browser.sentry-cdn.com/7.19.0/bundle.min.js"
+  integrity="sha384-ztBHD5Kyf+YJqkbZijnUhyS5dYdQDCEfB2QjYao1rVJ1qBpQn+WMbafstDcVTHnB"
+  crossorigin="anonymous"
+  onload="Sentry.init({ dsn: 'https://97bfbb7bc651472085dab062d23194f6@sentry.io/1460722' });"
+></script>
+
+
+
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+        
+  
+  	<meta name="description" content="Artificially intelligent tools for naturally creative humans.">
+	<meta property="og:url" content="https://deepai.org/">
+	<meta property="og:site_name" content="DeepAI">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="DeepAI">
+	<meta property="og:description" content="Artificially intelligent tools for naturally creative humans.">
+	<meta property="og:image" content="">
+  
+
+        
+        <style type="text/css">html{background-color:#170a2c}body{margin:0;padding:0;display:flex;flex-direction:column;min-height:100vh;background:linear-gradient(180deg,#7729aa -13.13%,#170a2d 0.17%,#0a061d 6.9%,rgba(10,6,30,0.99) 36.38%,#010311 98.59%)!important}*{font-family:"Helvetica Neue","TeX Gyre Heros","Nimbus Sans L","Liberation Sans","Roboto",sans-serif;font-weight:initial}a{text-decoration:none}header{height:78px;overflow:hidden;width:100%;z-index:10}header a.logo-link,footer a.logo-link{display:flex;color:white!important;cursor:pointer;margin-right:10px}header nav{display:flex;margin-left:auto;max-height:62px;background:var(--clear);border:1px solid transparent;border-radius:12px}header nav:hover{background:rgba(255,255,255,0.12)}header ul{list-style-type:none;margin:0;padding:0;display:flex;flex-direction:row;white-space:nowrap;align-items:center;min-width:46px;justify-content:center}header ul li{display:block;float:left;font-size:16px;color:#fff;line-height:25px}header ul li a{text-decoration:none;cursor:pointer}.drop-menu-button{display:block;width:46px;height:45px;padding:0;margin:0;border:none;background:transparent;cursor:pointer}.menu-icon{font-size:30px;font-weight:bold;cursor:pointer;vertical-align:middle;pointer-events:none}header ul li a:hover{text-decoration:none}header ul li.dropdown:hover{cursor:pointer}header .dropdown{position:unset}ul li.dropdown ul{visibility:hidden;opacity:0;display:none;position:absolute;transition:all 0.5s ease;top:auto;z-index:10;right:13px;margin:auto;margin-top:20px;width:296px;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);-webkit-backdrop-filter:blur(114px);-moz-backdrop-filter:blur(114px);backdrop-filter:blur(114px)}.show-dropdown{visibility:visible!important;opacity:1!important;display:block!important}ul li.dropdown ul a{clear:both;display:block;margin:0;margin:0px 10px;position:relative}ul li.dropdown ul li{margin:4px 5px;cursor:pointer}.search-bar-container{background:#212121;border-radius:30px;margin:0 9px 0 9px;height:32px;width:100%;max-width:450px;border:1px solid #ffffffa6;display:flex;flex-direction:row;align-items:center;box-shadow:inset 0px 2px 4px rgb(32 33 36 / 27%)}.search-bar-container img{height:17px;margin:8px}.search-bar{width:100%}.search-bar input{width:100%;height:100%;border:none;padding:0;color:white;background-color:rgba(0,0,0,0)}.loading{background:url(/static/images/loading.gif) no-repeat right center!important;background-size:contain!important}.loading-center{background:url(/static/images/loading.gif) no-repeat center center;background-size:contain;height:50px}a.button{display:flex;padding:6px 19px;font-size:14px;border-radius:45px;border:1px solid #1e79d1;vertical-align:bottom;white-space:nowrap;font-weight:bold;color:#1e79d1;margin-left:9px}a.button:active{opacity:0.9}a.button.highlighted{background-color:#a01ed1;color:white;width:auto;background:linear-gradient(94deg,#c764ec,#4a36b1);height:auto;border:none;cursor:pointer}a.button.hotline{background:transparent;color:#c764ec;width:auto;height:auto;border:1px solid #c764ec;cursor:pointer}a.login-button{border:none;color:white;cursor:pointer}input:focus,button{outline:none}footer{margin-top:auto;text-align:center}a.button.fitter{width:fit-content}a.button.doublecolor{border-radius:8px;border-right:1px solid #e7416b;border-bottom:1px solid #e7416b;border-left:1px solid #1e79d1;border-top:1px solid #1e79d1;background:transparent;padding:0.3em;color:white;width:auto;height:auto}#social-modal{min-width:400px;background-color:#101010}footer p{color:white;font-size:15px}.footer-row{display:flex;position:relative;flex-direction:row;align-items:center;justify-content:space-between;height:50px;background-color:#010009;z-index:5}.bad-auth-error{display:none;justify-content:center;font-size:11px;color:#eb4f4f;text-align:left;margin-bottom:8px;margin-left:8px}.good-auth-error{display:none;justify-content:center;font-size:11px;color:#59ee7f;text-align:left;margin-bottom:8px}.leftfooter{margin-left:16px}.leftfooter a{display:flex;flex-direction:row}.leftfooter p{background:linear-gradient(180deg,#fff 0%,#ebe5fb 50%,#7fabff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;display:flex;flex-direction:row;font-size:19px;margin:auto;margin-left:10px;font-family:var(--font-family-trocchi)!important}.rightfooter{display:flex;flex-direction:row;margin-right:16px}.contact,.press,.legal,.xlogo,.linkedinlogo,#pmLink{height:20px;margin:auto;margin-left:24px;color:white}.xlogo,.linkedinlogo{margin-top:6px}.footer-container{position:relative;overflow:hidden;bottom:0px;min-height:450px}.castle{position:relative;width:100vw;height:auto;z-index:1}.smaller-castle{display:none;width:100vw;height:auto}.centered-content{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:3}.centered-text{margin-top:-25px;font-size:30px}a.centered-button{background:white;border:none;color:#101010;white-space:nowrap;letter-spacing:2%;width:33vw;margin:auto;padding:10px 135px!important;font-family:Gudea!important}a.centered-button:hover{background:var(--purple);transition:background 0.4s ease-in-out;color:white}dialog{padding:0;border:0;border-radius:0.6rem}dialog::backdrop{background-color:rgba(0,0,0,0.4)}dialog + .backdrop{position:fixed;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,0.4)}dialog[open]{animation:slide-up 0.4s ease-out;display:flex}dialog{display:none;left:0;right:0;margin:auto;max-width:90vw;background-color:transparent}dialog#signup-modal form,dialog#login-modal form{display:block;margin:20px;width:500px}dialog#subscription-modal form{display:block;margin:20px;width:600px}dialog .button.social-auth{width:48%;background:#fff;color:#1D2129;border:1px solid #999;display:inline-block;padding:0 0 0 28px;text-align:left;margin:10px 4px}dialog .button.social-auth img{vertical-align:middle;margin:6px}dialog .button.more-options{background:linear-gradient(94deg,#c764ec,#4a36b1)}dialog .other-options-signup-row{display:flex;flex-direction:row;justify-content:center;align-items:center;margin:20px}dialog .other-options-signup-line{width:30%;height:0;border:1px solid #fff;margin:3px;display:inline-block}dialog .other-options-signup{color:#fff;font-size:15px;padding:0 10px 0 10px}dialog .switch-login-signup-button{padding:0 28px;color:#fff;background:#6ec0fd;font-weight:700;font-size:.7em;border-radius:3px;box-shadow:0 2px 5px 0 rgba(0,0,0,.26);border-width:0;border-style:none;-webkit-appearance:none;height:25px;cursor:pointer;margin:10px auto;width:30%;display:block}.login-container{display:none;flex-direction:column;width:440px;justify-content:flex-start;align-items:center;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);backdrop-filter:blur(114px);-webkit-backdrop-filter:blur(114px);-moz-backdrop-filter:blur(114px);-ms-backdrop-filter:blur(114px);margin:auto;color:white;position:fixed}.close{position:absolute;top:0.2em;right:0.2em;padding:0.3em;line-height:0.6;background-color:transparent;border:0;font-size:2em;color:#fff;cursor:pointer}.modal-header,.modal-body,.modal-footer{padding:1em;background-color:#2A282F;text-align:center;color:white}.login-header{text-align:center;font-size:36px;font-weight:600;letter-spacing:0.75px;line-height:normal;margin-top:49px;margin-bottom:0px;cursor:default;padding:0px}.out-credits-header{text-align:center;font-size:36px;font-weight:600;letter-spacing:0.75px;line-height:normal;margin-top:38px;margin-bottom:0px}.login-exit{display:flex;flex-direction:row;position:absolute;justify-content:right;right:24px;top:24px;cursor:pointer}.out-credits-exit{display:flex;flex-direction:row;position:absolute;justify-content:right;right:24px;top:24px;cursor:pointer}.please-subheader{text-align:center;color:darkgray;font-size:12px;line-height:18px;margin:auto;margin-top:8px;margin-bottom:16px}.options-container{width:270px;height:48px;display:flex;justify-content:center;align-items:center;background:rgba(142,142,142,0.05);border-radius:12px;justify-content:center;margin:auto;margin-top:12px;margin-bottom:12px;cursor:pointer}.membership-toggle{width:100%;height:36px}.login-active{display:flex;width:131px;height:40px;margin-left:4px;font-size:14px;font-weight:200;padding:0 41px 0 41px;justify-content:center;align-items:center;border-radius:10px;color:darkgray;cursor:pointer}.member-active{display:flex;width:131px;height:28px;margin-left:4px;font-size:12px;font-weight:200;padding:0 40px 0 40px;justify-content:center;align-items:center;border-radius:10px;color:darkgray;cursor:pointer}.signup{display:flex;width:131px;height:40px;padding:0 41px 0 41px;justify-content:center;align-items:center;border-radius:10px;font-size:14px;font-weight:200;color:darkgray;white-space:nowrap;text-align:center;cursor:pointer;margin-right:4px}.active{color:white;font-weight:400;background:rgba(255,255,255,0.1)}.signin-with-google{display:flex;position:relative;height:48px;width:270px;justify-content:center;align-items:center;gap:12px;border:none;border-radius:12px;color:white;font-size:14px;font-weight:400;font-family:var(--font-family-poppins);background:rgba(255,255,255,0.1);margin:auto;margin-bottom:12px;transition:background 0s ease;cursor:pointer}.signin-with-google:hover{background:white;color:black}.signin-with-github{display:flex;position:relative;height:48px;width:270px;justify-content:center;align-items:center;gap:12px;border:none;border-radius:12px;color:white;font-size:14px;font-weight:400;font-family:var(--font-family-poppins);background:rgba(255,255,255,0.1);margin:auto;margin-bottom:12px;transition:background 0s ease;cursor:pointer}.signin-with-github:hover{background:#121212;color:white}.button.login-with-email{display:flex;justify-content:center;background:none;border:none;white-space:nowrap;color:white;font-family:var(--font-family-poppins);font-size:12px;font-weight:400;margin:auto;margin-bottom:48px;cursor:pointer}.email-container::before{content:"Email Address";position:absolute;z-index:1;top:10px;left:60px;font-size:9px;pointer-events:none;color:darkgray}.email-container{position:relative;display:none;margin:auto;margin-bottom:12px;width:270px;height:48px;border-radius:12px;background:rgba(142,142,142,0.02)}.email-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:darkgray;z-index:1;border-right:1px solid darkgray;padding-right:12px}.input-email{padding-left:58px;padding-top:22px;padding-bottom:10px;height:14px;line-height:14px;position:relative;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:transparent;color:white;width:100%}.input-email::placeholder{font-size:12px;line-height:18px}.verified-icon{position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none}.password-container::before{content:"Enter Password";position:absolute;z-index:1;top:10px;left:60px;font-size:9px;pointer-events:none;color:darkgray}.password-container{position:relative;display:none;margin:auto;margin-bottom:12px;width:270px;height:48px}.lock-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:darkgray;z-index:1;border-right:1px solid darkgray;padding-right:10px}.input-password{font-size:12px;padding-left:58px;padding-top:22px;padding-bottom:10px;height:14px;line-height:14px;position:relative;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:transparent;color:white;width:100%}.input-password::placeholder{font-size:12px;line-height:18px}.reenter-password-container::before{content:"Re-enter Password";position:absolute;z-index:1;top:10px;left:60px;font-size:9px;color:darkgray;pointer-events:none}.reenter-password-container{position:relative;display:none;margin:auto;margin-bottom:12px;width:270px;height:48px}.button.login-email{display:none;flex-direction:column;background:#7000ff;border:none;width:270px;font-family:var(--font-family-poppins);color:var(--white);font-size:14px;font-weight:500;white-space:nowrap;letter-spacing:2%;margin:auto;padding:12px;margin:auto;margin-bottom:12px;transition:background 0.2s ease;cursor:pointer;align-items:center;border-radius:12px}.button.sub-set{display:flex;flex-direction:column;align-items:center;border-radius:12px;background:#7000ff;border:none;width:270px;font-family:var(--font-family-poppins);color:var(--white);font-size:14px;font-weight:500;white-space:nowrap;letter-spacing:2%;margin:auto;padding:12px;margin:auto;margin-bottom:12px;transition:background 0.2s ease;cursor:pointer}.button.goback{display:none;justify-content:center;background:none;border:none;white-space:nowrap;color:white;font-family:var(--font-family-poppins);font-size:12px;font-weight:400;margin:auto;margin-bottom:24px;cursor:pointer}#forgot-password{display:none;justify-content:center;text-align:center;font-size:12px;margin:auto;margin-bottom:12px;color:white}#forgot-password:hover{background:none;cursor:default}span.click-here{color:#c549fe;cursor:pointer;margin-left:6px}.modal-body .title{font-size:22px;justify-content:center}.modal-body .subtitle{opacity:0.9}.modal-header{margin:0;padding-bottom:0.6em;background-color:#f3f3f3;border-bottom:1px solid #f3f3f3}.modal-footer{border-top:1px solid #f3f3f3}.deepaiProSubscriptionRow{display:flex;flex-direction:column;align-items:center;justify-content:space-evenly}.deepaiProSignupRow{display:flex;align-items:center;justify-content:space-evenly}.deepaiProPaymentRow{display:flex;align-items:center;justify-content:space-evenly;flex-direction:column}.subscription-modal-body{width:max(40vw,386px);background-color:#2A282F}.out-of-credits-modal-body{display:flex;flex-direction:column;width:80vw;max-width:440px;justify-content:flex-start;align-items:center;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);backdrop-filter:blur(114px);margin:auto;position:relative;color:white;padding-bottom:32px}.subscription-pro{display:flex;flex-direction:column}.payasyougo{display:none;flex-direction:column}.modal-row{display:flex;flex-direction:row;justify-content:flex-start;padding-left:50px;align-items:center}.modal-row-top{display:flex;flex-direction:row;justify-content:flex-start;padding-left:40px;align-items:center}.sub-title{color:#fff;text-align:center;font-size:38px;padding:0 0 0 20px}.sub-info{padding:0.5em;color:#fff;text-align:left;font-size:14px}.purple{color:#c764ec}.smaller{text-align:left;font-size:12px;padding-right:70px}.stripe-signup-button{padding:8px 30px;font-size:16px;border-radius:45px;background-color:#a01ed1;color:white;width:auto;background:linear-gradient(94deg,#c764ec,#4a36b1);height:auto;border:none;cursor:pointer;vertical-align:bottom;white-space:nowrap;font-weight:bold;margin-bottom:11px}.switch-pay-button{font-size:16px;color:#9D9D9D;padding:10px;background:transparent;text-decoration:underline;width:auto;height:auto;border:none;cursor:pointer}.modal-pricing-title{padding-right:0px}.modal-pricing{margin:0px;font-size:14px;margin-bottom:4px;text-align:left}.modal-pricing-subheader{margin-bottom:100px}.modal-subscriptions-container{display:flex;position:relative;flex-direction:column;text-align:left;height:750px;border:1px solid transparent;border-radius:12px;padding:44px;padding-bottom:10px;color:#fff;overflow-y:hidden}.modal-small-subscription-container{background:rgba(142,142,142,0.02);backdrop-filter:blur(114px);-webkit-backdrop-filter:blur(114px);height:fit-content;width:426px;border:1px solid rgba(255,255,255,0.13);border-radius:12px;margin:auto}.modal-subscription-section{display:flex;flex-direction:row;justify-content:space-between;height:auto;overflow:hidden}.modal-pro-subscription-section{visibility:hidden}.modal-overview{visibility:visible}.modal-subscription-title-container{display:flex}.modal-subscription-title{font-size:24px;margin-bottom:10px;line-height:29px}.modal-subscriptions-subheader{font-size:14px;color:#9c9b9b;margin-bottom:16px;font-weight:300}.pro-title{margin-left:3px;color:#8f37ff;font-weight:600}.modal-subscription-price{display:flex}.modal-price{font-size:40px;color:#8f37ff;font-weight:500;margin-bottom:16px}.modal-subscription-length{font-size:14px;color:#9c9b9b;margin-left:6px;margin-top:26px}.modal-best-value{display:flex;position:absolute;top:18px;width:78px;height:24px;right:0;justify-content:center;align-items:center;font-size:60%;letter-spacing:2px;font-weight:500;padding:0px 10px 0 10px;border-bottom-left-radius:6px;border-top-left-radius:6px;background-color:#8f37ff;white-space:nowrap}.modal-get-started{display:flex;flex-direction:row;width:100%!important;height:48px;padding:5px 95px;font-family:var(--font-family-gudea);justify-content:center;align-items:center;gap:10px;border-radius:12px;font-size:18px;text-align:center;background-color:#8f37ff;color:white;border:none;white-space:nowrap;cursor:pointer}.modal-value{margin:0px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;height:48px;border-bottom:1px rgba(255,255,255,0) solid}.modal-overview-title{display:flex;margin-block-start:0px;margin-block-end:0px;justify-content:flex-start;align-items:center;height:48px;width:223%;border-bottom:1px rgba(255,255,255,0.12) solid}.modal-overview{list-style-type:none;font-size:14px;line-height:38px;padding-left:0px}.modal-membership{color:#8d8d8d;font-size:12px;margin:0px;height:24px;margin-bottom:0px;align-items:flex-start;border:none}.modal-membership-description{margin-bottom:0px;text-align:center;display:flex;flex-direction:column;align-items:center}.modal-value2{margin-top:-21px;border-bottom:1px rgba(255,255,255) solid}.modal-api-value{border-bottom:none}.get-started-container{display:none;flex-direction:column}.go-back-subscription{backdrop-filter:blur(10px);width:100%!important;height:46px;background:var(--clear);border:1px solid transparent;border-radius:12px;color:var(--white);white-space:nowrap;cursor:pointer;transition:none;padding:5px 65px;margin:auto;font-size:18px}.subscription-terms{margin-bottom:12px;list-style:none;line-height:24px}.payment-container{display:flex;flex-direction:column}.payment-options{width:100%}.stripe-pay-active{display:flex;width:100%;height:40px;margin-left:4px;font-size:14px;font-weight:200;padding:0 41px 0 41px;justify-content:center;align-items:center;border-radius:10px;color:darkgray;cursor:pointer}.paypal-pay{display:flex;width:100%;height:40px;padding:0 41px 0 41px;justify-content:center;align-items:center;border-radius:10px;font-size:14px;font-weight:200;color:darkgray;white-space:nowrap;text-align:center;cursor:pointer;margin-right:4px}.active{color:white;font-weight:400;background:rgba(255,255,255,0.1)}.modal-see-full{display:flex;flex-direction:row;justify-content:center;align-items:center;background:none;border:none;color:white;font-family:var(--font-family-poppins);font-size:12px;cursor:pointer;margin:auto;margin-top:12px;gap:4px}.subscribe-to{margin-bottom:12px}.paypal-cred{display:none}.paypal-styling{border-radius:12px;background:white;overflow:hidden;width:100%;height:48px}.backup-paypal-button{display:none!important}.paypal-sub{display:none}.share-button{color:#fff!important;opacity:0.65;cursor:pointer;display:flex;align-items:center;flex-direction:row}.share-button img{margin-right:4px}#social-image{margin:0 auto}.separator-bullet{margin:0 4px;color:#999}.card-list{display:flex;flex-direction:column;justify-content:center;padding:18px 10px 0}.card-list .main-list{display:flex;flex-direction:column;margin:0 auto;width:100%}.card-list-item{border-radius:8px;margin:30px auto 30px auto;width:100%;max-width:700px;cursor:pointer;display:flex;flex-direction:row;outline:none;box-shadow:0 8px 92px 20px rgb(71 28 115 / 70%)}.card-list-item .heart-link{display:flex;flex:0 1;flex-direction:column;padding:12px 0;align-items:center}.card-list-item .card-content{display:flex;flex-direction:column;background:transparent;width:100%;border-radius:0 8px 8px 0;color:black;padding:20px}.card-list-item:hover{outline:1px solid #898989}.card-list-item .tag-container{display:flex;flex-direction:row}.card-list-item .card-list-item-header{display:flex;flex-direction:row;align-items:center;margin:12px;font-size:14px;color:#999}.card-list-item .trunc-summary{margin:0 12px 12px;font-size:14px;color:#fff}.card-list-item .card-footer{display:flex;flex-direction:row;align-items:center;margin:12px;font-size:14px}.card-list-item .card-footer .author-link{color:#c764ec}.card-list-item .title{margin:0 12px 12px;font-size:15px;font-weight:500;line-height:24px;color:#fff}.dropdown-select{background-color:rgba(111,0,255,0.049);color:darkgray;padding:12px;font-size:16px;border:none;cursor:pointer;-webkit-appearance:none;-moz-appearance:none;appearance:none}.dropdown-select option{color:white;margin-top:14px}.dropdown-select option:first-child{color:darkgray}.dropdown-select option:hover{background-color:#f1f1f1}.dropdown-payment-amount::before{content:"Add credits to your account";position:absolute;z-index:1;top:10px;left:60px;font-size:8px;color:darkgray;pointer-events:none}.dropdown-payment-amount::after{color:white}.dropdown-payment-amount{position:relative;display:none;margin-bottom:12px;width:100%;height:48px}.go-dropdown{display:flex}.money-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:darkgray;z-index:1;border-right:1px solid darkgray;padding-right:12px}.dropdown-input-amount{font-size:12px;padding-left:58px;padding-top:22px;padding-bottom:10px;height:48px;line-height:14px;position:relative;width:100%;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(255,255,255,0.02);backdrop-filter:blur(12px)}.dropdown-icon{position:absolute;right:16px;top:50%;transform:translateY(-50%);pointer-events:none;background-color:#ffffff00;color:white;border:none;z-index:2}.dropdown-icon:hover{cursor:pointer}.sub-terms-pro-styling{padding-left:0px;margin:32px auto 38px auto;flex-direction:column}.sub-terms-go-styling{padding-left:0px;margin:32px auto 36px auto;flex-direction:column}.dataset{position:relative;width:100%}.payment-dropdown{margin-bottom:200px;margin:auto}#amount{-webkit-appearance:none;-moz-appearance:none}.card-list-item .title a{color:#fff}.title-image-pro{display:flex;flex-direction:row;justify-content:center;align-items:center}.logo-imagepro{width:15%;height:10%}.check-imagepro{width:10%}.thumbnail{width:500px;max-width:100%;margin:12px auto;height:350px;max-height:100%;box-sizing:border-box;border-radius:8px;background-size:contain;background-repeat:no-repeat;background-position:center}.middle{vertical-align:middle}.float-left{float:left}.float-right{float:right}.hide{display:none}.heart-link{display:flex;align-items:center;justify-content:center;color:#999!important;text-decoration:none!important;cursor:pointer;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.heart-count{margin:4px}.heart-link:not([hearted]) .hearted-heart-icon{display:none}.heart-link[hearted] .unhearted-heart-icon{display:none}.show-lt-md{display:none!important}.show-lt-sm{display:none!important}.hide-lt-xlg{display:none!important}.hide-lg{display:none!important}a:hover,a:focus{text-decoration:none}@media screen and (max-width:960px){header img.header-social-icon{margin-left:12px}.hide-lt-xlg{display:none!important}.hide-lt-lg{display:none!important}.hide-md{display:none!important}}@media screen and (max-width:800px){.modal-row{padding-left:2px}.sub-title{font-size:30px}.smaller{padding-right:30px}}@media screen and (max-width:600px){ul li.dropdown ul{right:10px}.contact,.press,.legal,.xlogo,.linkedinlogo{margin-left:14px;font-size:12px;height:17px}.modal-row-top{padding-left:15px}#social-modal{min-width:300px}.smaller{padding-right:10px}dialog#signup-modal{width:365px}dialog#signup-modal form{width:90%;margin:auto}dialog#login-modal form{width:100%;margin:auto}dialog#subscription-modal form{width:400px;margin:10px}.thumbnail{max-width:90%;margin:12px}dialog .button{width:80%}dialog input[type=email]{width:90%}dialog input[type=text]{width:90%}dialog input[type=password]{width:90%}dialog .button.social-auth{width:80%;display:block;margin:auto;margin-bottom:10px;text-align:left}.card-list .card-list-item{margin:4px 0}.card-list .card-list-item .card-content{width:87%}header img.deepai-logo{height:28px;margin-left:8px;width:32px;object-fit:cover;object-position:left}.show-lt-md{display:block!important}.hide-lt-xlg{display:none!important}.hide-lt-lg{display:none!important}.hide-lt-md{display:none!important}.hide-sm{display:none!important}.modal-get-started{margin-bottom:12px}.paypal-styling{margin-bottom:12px}.sub-terms-pro-styling{margin:15px auto 30px auto}.sub-terms-go-styling{margin:22px auto 32px auto}}@media screen and (max-width:470px){.modal-small-subscription-container{width:96vw;height:auto}.modal-subscriptions-container{padding:24px 34px;height:auto}.modal-overview-title{width:243%}dialog{max-width:100vw;width:100vw}ul li.dropdown ul{width:95vw}}@media screen and (max-width:440px){.modal-overview-title{width:233%}}@media screen and (max-width:420px){.modal-column{width:280px}.other-modal-column{width:280px;padding-bottom:5%;margin-bottom:10px}.other-modal-column .other-box-title{padding:0.8em}.modal-column .box-title{padding:0.8em}.other-modal-column :nth-child(2){padding:0.6em}.modal-row-top{padding-left:10px}.modal-column :nth-child(2){padding:0.6em}.deepaiProPaymentRow{display:flex;flex-direction:column}.modal-overview-title{width:213%}.member-active{padding:0 35px 0 35px}}@media screen and (max-width:390px){.modal-overview-title{width:193%}.member-active{padding:0 30px 0 30px}}@media screen and (max-width:375px){dialog#signup-modal form,dialog#login-modal form{width:90%;margin:auto}dialog input[type=email]{width:90%}dialog input[type=text]{width:90%}dialog input[type=password]{width:90%}dialog .button{width:90%}dialog .button.social-auth{width:90%}.title-image-pro{width:90%}.modal-row{width:90%}.modal-overview-title{width:183%}.member-active{padding:0 20px 0 20px}}@media screen and (max-width:345px){.subscription-modal-body{width:auto}.leftfooter p{display:none}.out-of-credits-modal-body{width:auto}.subscription-pro{width:100%;margin:auto}.modal-overview-title{width:163%}}@media screen and (max-width:320px){ul li.dropdown ul{right:10px}#social-modal{min-width:300px}dialog#signup-modal form,dialog#login-modal form{width:95%;margin:auto}dialog#signup-modal{width:365px}dialog#subscription-modal form{width:400px;margin:10px}dialog .button{width:100%}dialog .button.social-auth{width:100%}.thumbnail{max-width:90%;margin:12px}.card-list .card-list-item .card-content{width:87%}.card-list .card-list-item{margin:4px 0}dialog .button.social-auth{width:100%;display:block}.options-container{width:260px}.signin-with-google{width:240px}.signin-with-github{width:240px}.email-container{width:240px}.password-container{width:240px}.reenter-password-container{width:240px}.button.login-email{width:240px}.show-lt-md{display:block!important}.hide-lt-xlg{display:none!important}.hide-lt-lg{display:none!important}.hide-lt-md{display:none!important}.hide-xs{display:none!important}}@media screen and (max-width:290px){.options-container{width:235px}.member-active{padding:0 12px 0 12px}dialog{margin-left:0px}}div.sticky{position:-webkit-sticky;position:sticky;top:0;z-index:10}.fs-sidewall-container{z-index:9!important}#pmLink{visibility:hidden;text-decoration:none;cursor:pointer;background:transparent;border:none;font-size:16px;line-height:22px}#pmLink:hover{visibility:visible}@media screen and (max-width:600px){#pmLink{font-size:12px}}@media screen and (max-width:850px){#pmLink{position:absolute;bottom:53px;text-align:center;left:0px;width:85vw}}.hero-section{display:flex;height:min-content;position:relative;background:transparent;padding:0px;margin-bottom:30px}.hero-section-reefs{display:flex;justify-content:space-between;align-items:center;height:min-content;position:relative;background:transparent;padding:0px;width:auto;margin-bottom:-20px}.main-reef-section{display:flex;justify-content:space-between;align-items:center;height:200px;position:relative;background:transparent;padding:0px;width:auto;top:200px}.lower-section-reefs{display:flex;justify-content:space-between;align-items:center;height:min-content;position:relative;background:transparent;padding:0px;margin-bottom:170px;margin-top:270px;width:auto}.card-container{display:flex;position:relative;flex-direction:row;color:var(--white);margin:auto;cursor:pointer;flex-shrink:0;margin-top:200px;width:1160px}.card-component{display:flex;flex-direction:column;background:linear-gradient(#0c081f,#0c081f) padding-box,linear-gradient(180deg,rgba(255,255,255,0.13) -0.61%,rgba(255,255,255,0.46) -0.43%,rgba(255,255,255,0.2) 13.63%,rgba(255,255,255,0.03) 100%) border-box;height:316px;text-align:left;font-weight:bold;letter-spacing:2%;width:350px;border:1px solid transparent;border-radius:24px;justify-content:flex-end;align-items:left;margin:auto;margin-bottom:24px}.card-component:hover{border:1px solid white}.card-component:hover .card-image{width:302px;height:307px;transition:0.3s,transform 0.3s ease-in}.card-image{position:relative;width:282px;height:288px;border:none;border-radius:28px;z-index:1;left:50%;transform:translateX(-50%);transition:0.3s,transform 0.3s ease-in}.card-arrow{display:none}.card-component:hover .card-arrow{display:inline-block;opacity:1;transition:0.3s,transform 0.3s ease-in}.card-description{margin-left:34px;color:#b6b6b6;font-weight:300;font-family:var(--font-family-gudea);margin-top:0px;margin-right:12px;margin-bottom:34px}.text-to-image-section{display:flex;max-width:1100px;margin:auto;margin-bottom:24px;font-size:40px;color:white}.text-to-image-component{display:flex;width:396px;height:360px;margin-right:20px;margin-left:20px;backdrop-filter:blur(10px)}.text-to-image-container{margin-right:40px}.card-title{display:flex;flex-direction:row;width:310px;height:140px;background:rgba(255,255,255,0.048);margin-bottom:33px;margin-top:33px;border-radius:12px;border:2px solid rgba(255,255,255,0.077);padding-top:12px;padding-bottom:88px;min-width:auto}.text-to-image-prompt{display:flex;font-size:16px;font-weight:300;width:100%;width:274px;margin-left:12px;margin-top:0px}.text-to-image-image{height:340px;width:314px}.card-component:hover .text-to-image-image{width:348px;height:370px;transition:0.3s,transform 0.3s ease-in}.ai-characters-section{font-size:40px;margin-bottom:16px}.sub-title-characters-section{font-size:20px;margin-bottom:48px;margin-right:26px;color:#B6B6B6;line-height:32px;font-family:Gudea!important}.ai-characters{display:flex;max-width:1100px;margin:10px 24px 10px 24px;flex-direction:column;align-items:center;font-size:40px;color:white}.ai-characters-title-container{display:flex;flex-direction:column;position:relative;top:0;margin-bottom:102px;align-items:flex-start;width:97%}.ai-character-cards{display:flex;flex-wrap:wrap;box-sizing:border-box;justify-content:space-between;margin:auto}.ai-character-cards{display:flex;flex-wrap:wrap;justify-content:center;align-items:stretch;padding:0;margin:0 auto;gap:1%}.character-card{display:flex;flex-direction:column;position:relative;flex:0 1 calc(33.33% - 2%);box-sizing:border-box;font-weight:bold;cursor:pointer;font-size:20px;text-align:center;margin-bottom:14px;height:234px}.character-card .character img{height:auto;display:block}.ai-label{position:absolute;right:24px;top:105px}.character{padding-left:0px;width:100%;backdrop-filter:blur(10px)}.character:hover{background:none}.explore-container{display:flex;justify-content:center;align-items:center;text-align:center;margin-top:130px}.explore{margin-top:24px}.explore-cards-container{display:flex;flex-direction:column;position:relative;margin:auto;justify-content:center;align-items:center;color:white;width:1100px;max-width:1100px}.illusions-main-container{display:flex;flex-direction:row;justify-content:center;width:100%;height:356px;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);backdrop-filter:blur(10px);margin-top:48px}.illusions-main-image{width:250px;margin:50px}.illusions-main-image-left{margin-left:0px}.illusions-main-image-right{margin-right:14px}.illusions-title,.ai-search-title,.colorize-title{font-size:36px;margin-bottom:16px;margin-top:48px;margin-left:48px}.illusions-subtitle,.illusions-arrow,.ai-search-subtitle,.ai-search-arrow,.colorize-subtitle,.colorize-arrow{margin-left:48px;margin-right:48px}.ai-search-subtitle,.illusions-subtitle,.colorize-subtitle{margin-bottom:48px;font-size:20px;margin-top:20px;color:#B6B6B6;line-height:32px;font-family:Gudea!important}.illusions-bottom-container{display:flex;width:100%;height:356px;margin-top:16px;justify-content:space-between}.ai-search-container{border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);backdrop-filter:blur(10px);margin-right:7px;width:100%}.colorize-photos-container{border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:rgba(142,142,142,0.02);backdrop-filter:blur(10px);margin-left:7px;width:100%}.ai-image-editor{display:flex;flex-direction:row;max-width:1100px;width:1100px;height:570px;background:linear-gradient(#0c081f,#0c081f) padding-box,linear-gradient(180deg,rgba(255,255,255,0.13) -0.61%,rgba(255,255,255,0.46) -0.43%,rgba(255,255,255,0.2) 13.63%,rgba(255,255,255,0.03) 100%) border-box;text-align:left;border:1px solid transparent;border-radius:24px;justify-content:space-around;align-items:center;margin:auto;margin-top:130px;backdrop-filter:blur(10px)}.monalisa{display:flex;position:relative;justify-content:center;align-content:center;height:85%;width:auto;border-radius:14px}.image-editor-container{display:flex;flex-direction:column;margin-top:-160px;color:white}.image-editor-container-mobile{display:none;color:white}.image-editor-title{font-size:40px}.image-editor-subtitle{font-size:20px;margin:auto;margin-bottom:48px;margin-right:26px;margin-top:20px;max-width:330px;color:#B6B6B6;line-height:32px;font-family:Gudea!important}.modify-mobile-edit{margin-top:65px;justify-content:flex-start!important;margin-bottom:30px}.char-mobile-edit{margin-top:20px}.company-section{display:flex;flex-direction:column;height:315px;position:relative;background:#0D0D0D}h1,h3,p{color:white;margin:20px 0}.hero h1{font-family:var(--font-family-trocchi)!important;font-size:106px;margin-bottom:12px;font-weight:100}.hero>*{z-index:0}.button{display:flex;flex-direction:row;width:35px;padding:5px 95px;font-family:var(--font-family-gudea);justify-content:center;align-items:center;gap:10px;border-radius:12px;font-size:18px;text-align:center;font-style:normal}.button.aichat{background:linear-gradient(90deg,#c549fe 0%,#7000ff 100%);border:none;color:var(--white);white-space:nowrap;font-weight:bold;letter-spacing:2%;margin-right:12px;transition:background-position 0.4s ease;background-size:200% 100%;background-position:40% 0;cursor:pointer}.button.aichat:hover{background-position:100% 0}.button.login,.button.chatbutton,.button.imagebutton{background:var(--clear);border:none;color:var(--white);font-weight:bold;letter-spacing:2%;margin-right:12px;transition:background 0.4s ease;cursor:pointer;backdrop-filter:blur(10px)}.button.chatbutton,.button.imagebutton{display:flex;flex-direction:row;padding:10px 85px;width:auto;margin-right:0px;justify-content:space-around;cursor:pointer;backdrop-filter:blur(10px);border-radius:24px;font-family:Gudea!important}.button.chatbutton:hover{background:var(--purple)}.button.imagebutton:hover{background:var(--pink)}.big-flops{width:85%;height:auto}.title{background:linear-gradient(180deg,#fff 0%,#ebe5fb 40%,#7fabff 100%);-webkit-background-clip:text;background-clip:text;color:transparent;display:flex;flex-direction:row}.titlesparkle{position:relative;top:-80px;left:100%;margin-left:-80px}.left-reef{width:45vw;height:79.65vw;z-index:3}.center-gap{width:33%}.right-reef{width:50vw;height:88.5vw;z-index:3}.right-lower-reef{width:25%;position:relative;z-index:3;pointer-events:none}.left-lower-reef{width:25%;position:relative;top:340px;z-index:3;pointer-events:none}.right-bottom-reef{width:25%;position:relative;top:-150px;z-index:3;pointer-events:none}.left-lower-grad{width:45%;position:relative;top:840px;display:none;z-index:3;pointer-events:none}.right-lower-grad{width:45%;position:relative;top:-150px;display:none;z-index:3;pointer-events:none}.left-bottom-grad{width:35%;position:relative;top:540px;z-index:3;pointer-events:none}.right-bottom-grad{width:45%;position:relative;top:-150px;display:none;z-index:3;pointer-events:none}.generate-section{margin:auto}.generate-char{margin-top:50px}.generate-editor{margin-top:-250px}.generate-illu{margin-top:-180px}.quote{text-align:center;font-size:38px;width:100%;white-space:nowrap;color:white;font-weight:400;z-index:4;top:38%!important}.colorful{color:white;position:relative;z-index:2}.background-quote-color{position:relative;background:linear-gradient(90deg,#c549fe 27.08%,#7000ff 100%);filter:blur(16px);width:460px;height:40px;text-align:center;margin:auto;z-index:1;bottom:40px}.title-section-sparkle{position:relative;width:55px;height:30px;top:-36px}.popular-gen-title{font-size:40px;margin-bottom:0px;letter-spacing:1.5px;font-weight:400;padding-right:34px;color:white}.subheader-section{margin:auto;font-size:20px;margin-top:20px;color:#B6B6B6;line-height:32px;font-family:Gudea!important}.ai-image-cards-container{display:flex;flex-direction:row;justify-content:space-between;max-width:1100px;margin:auto;margin-top:260px}.ai-image-cards{display:flex;flex-direction:row;justify-content:center;align-items:center}.ai-image-title-container{display:flex;flex-direction:column;align-items:left;justify-content:center;color:white}.tilting-image{display:flex;justify-content:center;align-items:center;position:relative;margin-top:50px}.pink-image{margin-top:50px;margin-left:148px;height:208px;width:auto;filter:saturate(0)}.blue-image{display:flex;position:absolute;transform:rotate(15deg);transition:ease-in-out 0.3s}.blue-image:hover{margin-top:-24px;margin-left:45px;display:flex;position:absolute;justify-content:center;align-items:center;transform:rotate(32deg)}.ai-image-cards-container:hover .pink-image{filter:saturate(100%)}.titlting-image{display:flex;position:absolute;justify-content:center}.pink-function{display:flex;flex-direction:row;width:100%;margin:auto;margin-top:24px;justify-content:center;align-items:center}.turn-pink-toggle:hover{background:var(--white);color:black}.line{border:1px solid rgba(133,133,133,0.4);width:72px}.steps{display:flex;justify-content:center;background:linear-gradient(#1a102c,#1a102c) padding-box,linear-gradient(180deg,rgba(255,255,255,0.13) -0.61%,rgba(255,255,255,0.46) -0.43%,rgba(255,255,255,0.2) 13.63%,rgba(255,255,255,0.03) 100%) border-box;border:1px solid transparent;border-radius:24px;font-size:24px;padding:12px;color:var(--white);white-space:nowrap;font-family:var(--font-family-gudea);cursor:pointer;min-width:24px;max-height:24px;text-align:center;align-items:center}.turn-pink-toggle{background:linear-gradient(#1a102c,#1a102c) padding-box,linear-gradient(180deg,rgba(255,255,255,0.13) -0.61%,rgba(255,255,255,0.46) -0.43%,rgba(255,255,255,0.2) 13.63%,rgba(255,255,255,0.03) 100%) border-box;border:1px solid transparent;border-radius:12px;height:50px;font-size:24px;padding:4px 36px 4px 36px;color:var(--white);white-space:nowrap;font-family:var(--font-family-gudea);letter-spacing:2%;cursor:pointer}.ai-image-section{font-size:40px;margin-bottom:16px}.sub-title-section{font-size:20px;margin-bottom:48px;margin-right:26px;max-width:330px;color:#B6B6B6;line-height:32px;font-family:Gudea!important}.cta{display:flex;align-items:center;position:absolute;margin:auto;padding:14px 24px;transition:all 0.2s ease;border:none;background:none;z-index:5}.cta-extra{margin-left:48px}.cta:before{content:"";position:absolute;top:2px;left:1px;display:block;border:1px solid rgb(255,255,255);border-radius:24px;width:48px;height:48px;transition:all 0.3s ease}.button-path{display:none}.cta:hover .button-path{display:flex}.cta:hover{cursor:pointer}.cta:hover span{color:#000000}.cta span{position:relative;font-family:var(--font-family-poppins);font-size:18px;font-weight:500;letter-spacing:0;color:#ffffff}.cta svg{position:relative;top:-1px;margin-left:24px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#ffffff;stroke-width:2;transform:translateX(-32px);transition:all 0.3s ease-in-out}.cta:hover:before{width:100%;background:rgb(255,255,255)}.cta:hover svg{transform:translateX(-16px);stroke:#000000}.cta:active{transform:scale(0.95)}.image-gen-mobile-animated{display:none}.other-image-gen-mobile-animated{display:none}.hero{position:relative;display:flex;flex-direction:column;margin:auto;justify-content:center;align-items:center;margin-top:120px;margin-bottom:150px}textarea{position:relative;display:inline-flex;flex-direction:column;height:52px;padding:12px;align-items:flex-start;justify-content:flex-start;border-radius:12px;border:1px solid rgba(255,255,255,0.13);background:linear-gradient(#0f0824,#0c071f) padding-box,linear-gradient(180deg,rgba(255,255,255,0.13) -0.61%,rgba(255,255,255,0.46) -0.43%,rgba(255,255,255,0.2) 13.63%,rgba(255,255,255,0.03) 100%) border-box;backdrop-filter:blur(10px);color:white;font-family:var(--font-family-gudea);margin:auto;overflow:hidden;font-size:18px;word-wrap:break-word;max-width:495px;max-height:305px;resize:none}.topbuttons{display:flex;flex-direction:row;margin-top:24px;gap:8px;font-weight:200}.hero-section h1{color:#ffffffa1;text-align:center;font-size:40px;margin:5px}.hero-section h3{color:#ffffffb5;font-size:25px;text-align:center;margin:55px 0 10px 0}.hero-section h4{color:white;font-size:15px;margin:10px 0 30px 0}.hero-section p{font-size:26px;line-height:32px;margin:16px 0 28px;font-weight:bold}.hero-section .hero-content{max-width:1100px;margin:0 auto;display:flex;flex-direction:column;align-items:center}.mainSubmitButton{padding:6px 19px;font-size:18px;border-radius:45px;border:none;vertical-align:bottom;white-space:nowrap;color:white;background:#cf56ff;cursor:pointer;margin:45px;margin-left:auto;margin-right:auto;display:inline-block;width:160px}@media only screen and (max-width:500px){.mainSubmitButton{width:32vw}}#searchSubmitButton{background:#264ad4}.submitButtonsContainer{display:flex;flex-direction:row;justify-content:center;align-items:center;margin-left:auto;max-width:560px;margin-right:auto}.link-list{width:38%;margin-left:auto;max-width:100%;margin-right:auto;padding-top:10px}.link-list>*{color:white!important;padding:16px;margin:13px;list-style:none;border-radius:7px;position:relative;display:block}.link-list a{border:1px solid white;margin-bottom:30px}.link-list a::first-child{margin-right:25px}.link-list a::after{content:'⮕';right:16px;position:absolute}.title-card{box-shadow:0 8px 92px 20px rgb(71 28 115 / 70%);backdrop-filter:blur(24px);border-radius:10px;border:1px solid #101010;margin:auto;margin-bottom:30px;width:86%}.title-card-mod{box-shadow:0 8px 92px 20px rgb(71 28 115 / 70%);border-radius:10px;backdrop-filter:blur(24px);margin:auto;margin-bottom:30px;width:86%}.title-card-pro{backdrop-filter:blur(24px);border-radius:10px;border:1px solid #101010;margin:auto;margin-bottom:30px}.title-cardworks{border-radius:10px;margin:auto;margin-bottom:30px;width:96%}.title-card-art{display:flex;flex-direction:column;margin-top:20px;margin-botton:20px;align-items:center;justify-content:center;padding-left:22px;padding-right:22px}.title-card-perks{display:flex;flex-direction:column;margin-top:20px;margin-botton:20px;align-items:flex-start;justify-content:center}.title-card-more{box-shadow:0px -50px 72px 0px rgb(71 28 195 / 50%);background:linear-gradient(224deg,#101010,#4a36b1);backdrop-filter:blur(24px);margin:auto;padding-bottom:30px;width:100%}.title-card-art h1{font-size:30px;color:#8c53ff!important}.title-card-art h2{font-size:22px;color:#fff}.title-card-boldtext{font-size:42px;color:#fff}.title-card-art p{font-size:20px;margin:auto;color:#8c53ff!important}.title-card-container{display:flex;flex-direction:row;margin:auto;width:100%;max-width:fit-content;justify-content:center}.title-card-container>div:nth-child(2){width:40%}.title-card-block{display:flex;flex-direction:column;width:100%;margin:auto;max-width:fit-content;align-items:center;justify-content:center;margin-bottom:30px}.title-card-blockapi{display:flex;flex-direction:column;width:100%;margin:auto;max-width:fit-content;align-items:center;justify-content:center;margin-bottom:30px}.title-card-blockapi>div:nth-child(2){width:80%}.title-card-row{display:flex;flex-direction:row;margin:auto;width:100%;align-items:center;justify-content:center;margin-bottom:30px;margin-top:20px}.title-card-image{width:358px;height:362px;border-radius:45px;padding:32px;margin:auto;object-fit:cover}.title-card-gif{width:358px;border-radius:52px;padding:32px;margin:auto}.title-card-imageapi{width:80%;height:80%;border-radius:45px;padding:32px;margin:auto}.title-card-imageworks{width:30%;height:30%;border-radius:50px;padding:32px;box-shadow:0 8px 92px 0 rgb(71 28 115 / 60%)}.title-card-imagepro{width:30px;height:30px;margin:auto;margin-right:20px}.title-card-prompt{width:380px;max-width:85%;padding:20px 20px 70px 20px;font-size:24px;margin:auto;font-style:italic;font-family:fantasy!important;color:#8c53ff!important}.title-card-promptworks{display:flex;flex-direction:column;width:340px;max-width:85%;padding:20px 20px 70px 20px;margin:auto;margin-left:30px;margin-right:30px}.title-card-promptworks h3{font-size:18px}.title-card-promptworks h3{font-size:22px;font-weight:500}.title-card-container h3{padding:20px}a.other-button{color:white;width:auto;background:linear-gradient(94deg,#c764ec,#4a36b1);height:auto;border:none;border-radius:45px;vertical-align:bottom;white-space:nowrap;font-weight:bold;padding:10px 25px;font-size:22px;cursor:pointer;margin-bottom:26px}.image_div img{width:100%;object-fit:cover;border-radius:20px;position:relative}@media screen and (max-width:1150px){.title-card{width:96%}.title-card-mod{width:96%}.link-list{width:40%}}@media screen and (max-width:1138px){.ai-characters-title-container{width:67%}.ai-image-editor{width:72vw}.explore-cards-container{width:72vw;margin-top:-30px}.illusions-main-image-left{margin-left:50px}.illusions-main-image-right{display:none}}@media screen and (max-width:1030px){.hero-section-reefs{margin-bottom:-250px}.text-to-image-section{flex-direction:column;justify-content:center;align-items:center}.image-gen-animated{display:none}.image-gen-mobile-animated{display:flex;justify-content:flex-end;margin-left:38px}.ai-image-editor{flex-direction:column;width:416px;height:auto;justify-content:flex-start;margin-top:0px}.image-editor-container{display:none}.image-editor-container-mobile{display:flex;flex-direction:column;margin-top:12px;margin-left:32px}.monalisa{margin:22px 12px;height:auto;width:90%}.text-to-image-container{margin:auto;margin-top:100px}.card-component{margin-top:150px}.quote{font-size:28px}.background-quote-color{width:350px;height:28px;bottom:30px}.centered-content{top:42%}.illusions-title,.ai-search-title,.colorize-title{margin-left:30px;margin-right:5px;font-size:28px}.illusions-subtitle,.illusions-arrow,.ai-search-subtitle,.ai-search-arrow,.colorize-subtitle,.colorize-arrow{margin-left:30px;margin-right:20px}.cta-extra{margin-left:30px}.generate-editor{margin-top:-150px}.right-lower-reef{width:35%;position:relative;z-index:3}.left-lower-reef{width:35%;position:relative;top:640px;z-index:3}.right-bottom-reef{width:35%;position:relative;top:-240px;z-index:3}.left-bottom-grad{width:40%;position:relative;top:540px;z-index:3}.image-editor-subtitle{margin-left:0px;margin-right:0px}}@media screen and (max-width:800px){.title-card{width:76%}.title-card-mod{width:76%}.link-list{width:80%}.title-card-container>div:nth-child(2){width:80%}.title-card-more>div:nth-child(1){width:60%}.title-card-blockapi>div:nth-child(2){width:70%}.centered-text{font-size:22px}.title-card-container{display:flex;flex-direction:column}.title-card-image{margin:auto;padding:5px;padding-top:13px;border-radius:25px}.title-card-gif{margin:auto;padding:5px;padding-top:13px;padding-bottom:23px}.title-card-imageapi{width:70%}.title-card-imageworks{width:50%}.title-card-row{display:flex;flex-direction:column;margin-bottom:0px;margin-top:0px}.title-card-art h1{font-size:26px;margin-left:20px}.title-card-block>div:nth-child(3){display:flex;flex-direction:column-reverse}.title-card-prompt{padding:20px 20px 40px 20px}.text-to-image-container{text-align:center;margin-top:10px;padding:10px}.ai-image-editor{margin-top:10px;margin-bottom:-40px}.sub-title-section{margin:auto;margin-bottom:10px}.image-editor-subtitle{margin-right:auto;margin-left:auto;margin-bottom:28px}.sub-title-characters-section{margin-right:auto;margin-left:auto;margin-top:20px;width:400px}.image-editor-container-mobile{margin:auto;margin-top:12px;text-align:center}.image-editor-title{text-align:center}.ai-characters-title-container{margin:auto;text-align:center;align-items:center}.ai-characters-section{margin:auto;text-align:center}.explore-container{text-align:center;margin-top:0px}.image-gen-mobile-animated{justify-content:center;margin-left:0px}.illusions-main-container{flex-direction:column;height:auto;align-items:center;justify-content:center;padding-bottom:30px}.illusions-card-container{margin-top:30px;text-align:center;width:85%}.illusions-main-image-right{display:none}.illusions-main-image-left{margin:30px auto;width:80%}.illusions-title,.ai-search-title,.colorize-title{margin:auto}.ai-search-subtitle,.illusions-subtitle,.colorize-subtitle{margin-bottom:16px}.illusions-bottom-container{flex-direction:column;margin:auto;margin-top:16px;height:auto}.ai-search-container,.colorize-photos-container{margin:auto;margin-bottom:16px;height:auto}.ai-search-card-container{margin:auto;margin-top:30px;margin-bottom:30px;text-align:center;width:90%}.colorize-card-container{margin:auto;margin-top:30px;margin-bottom:30px;text-align:center;width:90%}.cta{display:flex;position:relative;flex-direction:row;font-family:var(--font-family-gudea);justify-content:center;align-items:center;gap:10px;border-radius:12px;font-size:18px;text-align:center;font-style:normal;background:var(--purple);width:380px;padding:14px 0px}.cta-extra{margin:auto;margin-bottom:20px}.cta:before{display:none}.cta svg{display:none}.cta span{width:max-content}.title-section-sparkle{display:none}.popular-gen-title{padding:0px;margin:0px 14px}.subheader-section{margin:20px 14px}.quote{display:none}.hero-section-reefs{margin-bottom:0px}a.centered-button{padding:10px 95px!important}.generate-illu{margin-top:-140px}.big-flops{width:75%}.other-image-gen-animated{display:none}.other-image-gen-mobile-animated{display:flex;justify-content:flex-end}}@media screen and (max-width:790px){.character-extra-card{display:none}}@media screen and (max-width:600px){.hero{margin-top:110px}.footer-container{min-height:90vh;margin-top:40px}.big-flops{width:75vw}.centered-text{font-size:25px;margin-top:-20px}.ai-characters-title-container{width:95%}.illusions-main-container{width:90%;height:auto;margin-top:30px;padding-bottom:20px}.illusions-bottom-container{width:90%}.centered-content{top:40%}.castle{display:none}.smaller-castle{display:block;position:absolute;bottom:0px}a.centered-button{padding:10px 125px!important}.explore-cards-container{width:auto}.illusions-card-container{width:85%;margin-top:30px}.illusions-main-image-left{margin-bottom:30px}.main-reef-section{height:400px;top:0px}.right-lower-reef{display:none}.left-lower-reef{display:none}.right-bottom-reef{display:none}.right-bottom-grad{display:flex;width:55%}.left-lower-grad{display:flex}.right-lower-grad{display:flex}.generate-editor{margin-top:-350px}.generate-illu{margin-top:-350px}textarea{width:90%}.image-gen-mobile-animated{margin-bottom:30px}}@media screen and (max-width:500px){.title-card-image{margin:auto;padding:5px;width:90%;height:auto;padding-top:10px;border-radius:25px}.title-card-gif{margin:auto;padding:5px;width:90%;height:auto;padding-top:10px;padding-bottom:25px}textarea{width:85%}.button.chatbutton,.button.imagebutton{padding:10px 55px;width:50%}.character-mobile-extra-card{display:none}.title-section{width:90%}.topbuttons{width:92%}.ai-search-subtitle,.illusions-subtitle,.colorize-subtitle{margin-left:auto;margin-right:auto}.illusions-main-image-left{margin-top:10px}}@media screen and (max-width:475px){.sub-title-characters-section{width:90%;margin-bottom:20px}}@media screen and (max-width:450px){.text-to-image-component{width:90%;height:310px}.text-to-image-image{width:78%;height:auto}.card-component:hover .text-to-image-image{width:88%;height:auto}.card-title{width:76%}.quote{top:128%!important}.ai-image-editor{width:90%}.cta{width:80vw}.character-card{height:auto}}@media screen and (max-width:420px){.title-card{width:95%}.title-card-mod{width:95%}.link-list{width:90%}.title-card-container>div:nth-child(2){width:90%}.title-card-more>div:nth-child(1){width:90%}.title-card-blockapi>div:nth-child(2){width:90%}.title-card-imageworks{width:70%}.title-card-container{display:flex;flex-direction:column}.title-card-art h1{font-size:24px;margin-left:20px}.title-card-prompt{padding:20px 20px 40px 20px}.button.chatbutton,.button.imagebutton{padding:10px 45px}.big-flops{width:90vw}.character-card .character img{width:87vw;height:auto}.ai-characters{margin:auto}.footer-container{margin-top:20px}}@media screen and (max-width:330px){a.centered-button{padding:10px 95px!important}.hero{width:95vw}.button.chatbutton,.button.imagebutton{padding:10px 35px}.generate-section{margin-top:70px}.generate-editor{margin-top:-330px}.generate-illu{margin-top:-330px}}.ocean{width:100%;height:100%;padding:0;margin:0;top:0px;z-index:0;position:fixed;mix-blend-mode:screen;opacity:0.3;pointer-events:none}.bubble{width:30px;height:30px;border-radius:100%;position:absolute;background-color:white;bottom:-30px;opacity:0.2;animation:bubble 15s ease-in-out infinite,sideWays 8s ease-in-out infinite alternate}@keyframes bubble{0%{transform:translateY(0%);opacity:0.06}100%{transform:translateY(-120vh)}}@keyframes sideWays{0%{margin-left:0px}100%{margin-left:3em}}.bubble--1{left:10%;animation-delay:0.8s;animation-duration:46s;opacity:0.2}.bubble--2{width:15px;height:15px;left:40%;animation-delay:1.3s;animation-duration:40s;opacity:0.1}.bubble--3{width:10px;height:10px;left:30%;animation-delay:5.3s;animation-duration:50s;opacity:0.3}.bubble--4{width:25px;height:25px;left:40%;animation-delay:8.3s;animation-duration:47s;opacity:0.2}.bubble--5{width:30px;height:30px;left:60%;animation-delay:10.3s;animation-duration:45s;opacity:0.1}.bubble--6{width:10px;height:10px;left:80%;animation-delay:3.3s;animation-duration:60s;opacity:0.4}.bubble--7{width:15px;height:15px;left:90%;animation-delay:-7.3s;animation-duration:55s;opacity:0.3}.bubble--9{width:20px;height:20px;left:50%;bottom:30px;animation-delay:-5.3s;animation-duration:49s;opacity:0.2}.bubble--10{width:40px;height:40px;left:30%;bottom:30px;animation-delay:-21.3s;animation-duration:46s;opacity:0.3}.bubble--11{width:30px;height:30px;left:60%;bottom:30px;animation-delay:-14.05s;animation-duration:40s;opacity:0.3}.bubble--12{width:25px;height:25px;left:90%;bottom:30px;animation-delay:-10.8s;animation-duration:49s;opacity:0.3}#particles-js{position:absolute;width:100%;height:100%}</style>
+
+        <!--  Start Google Analytics Tag -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GY2GHX2J9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GY2GHX2J9Y');
+</script>
+        <!--  End Google Analytics Tag -->
+	</head>
+	<body>
+
+<!-- Pushdown ad should be placed right after the opening <body> tag. Note: if you have a sticky navigation bar, you may need to update CSS to accommodate this ad type. -->
+<!-- Tag ID: deepai.org_header -->
+<div class="sticky">
+  <div align="center" data-freestar-ad="__320x50 __970x90" id="deepai.org_header">
+    <script data-cfasync="false" type="text/javascript">
+      if (typeof freestar !== 'undefined') {
+        freestar.config.enabled_slots.push({ placementName: "deepai.org_header", slotId: "deepai.org_header" });
+      }
+    </script>
+  </div>
+</div>
+<script>
+if (typeof user_paid_for_no_ads !== 'undefined') {
+    // the variable is defined
+    if(user_paid_for_no_ads){
+      // remove element "deepai.org_header" if it exists
+      var pushdown = document.getElementById("deepai.org_header");
+      if(pushdown){
+        // just remove the parent element
+        const parentMain = pushdown.parentNode;
+        if (parentMain){
+          parentMain.remove();
+        }
+      }
+
+    }
+    else {
+        try{
+            var headerAd = document.getElementById("deepai.org_header");
+            headerAd.setAttribute('style', 'height: 90px;');
+        }catch(err){
+            console.log("Error setting header ad height", err);
+        }
+    }
+}
+
+</script>
+
+<!-- end pushdown tag -->
+        
+		<header>
+            
+<style>
+   :root {
+  --white: rgba(255, 255, 255, 1);
+  --clear: rgba(255, 255, 255, 0.04);
+  --cod-gray: rgba(8, 8, 8, 1);
+  --cod-gray-2: rgba(9, 9, 9, 1);
+  --pink: #c549fe;
+  --purple: #7000ff;
+  --font-size-xxs: 24px;
+  --font-size-xs: 26px;
+  --font-size-s: 32px;
+  --font-size-m: 40px;
+  --font-size-l: 48px;
+  --font-family-trocchi: "Trocchi";
+  --font-family-poppins: "Poppins";
+  --font-family-gudea: "Gudea";
+}
+a.button {
+  display: flex;
+  flex-direction: row;
+  width: 35px;
+  padding: 5px 95px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-left: 16px;
+  margin-right: 16px;
+  height: 45px;
+}
+
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.hidden-icon {
+  display: none;
+}
+
+.exit {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: right;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+a.button.imagegenerator, a.button.aichat, a.button.login {
+  z-index: 2;
+  width: fit-content;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: var(--white);
+  white-space: nowrap;
+  letter-spacing: 2%;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: none;
+  padding: 5px 10px;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Gudea!important;
+}
+
+a.button.chatbutton,
+a.button.imagebutton {
+  background: var(--clear);
+  border: none;
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 2%;
+  margin-right: 12px;
+  transition: background 0.4s ease;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+a.button.chatbutton,
+a.button.imagebutton {
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  margin-right: 0px;
+  justify-content: space-around;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+a.button.chatbutton:hover {
+  background: var(--purple);
+}
+a.button.imagebutton:hover {
+  background: var(--pink);
+}
+
+a.button.menu {
+  background: none;
+  border: none;
+  width: 24px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.dropbtn {
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    margin: auto;
+}
+
+#userIconDrop {
+  display: none;
+}
+
+.usericon {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  margin: 24px;
+  margin-top: auto;
+  object-fit: cover;
+}
+
+.nav-profile-section {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.nav-usernames {
+  gap: 6px;
+  margin-bottom: 3px;
+  margin-bottom: 6px;
+}
+
+.nav-profilename {
+  margin: auto;
+  margin-bottom: 0px;
+  white-space: normal;
+}
+
+.nav-username {
+  margin: auto;
+  margin-top: 0px;
+  white-space: normal;
+  max-width: 170px;
+  overflow-wrap: break-word;
+  word-wrap: normal;
+  word-break: break-word;
+  font-size: 13px;
+}
+
+.nav-profile-button {
+  display: flex;
+  flex-direction: column;
+  background: #8f37ff;
+  border: none;
+  width: 90%;
+  font-family: var(--font-family-poppins);
+  color: var(--white);
+  white-space: nowrap;
+  letter-spacing: 2%;
+  margin: auto;
+  padding: 12px;
+  margin: auto;
+  margin-top: 0px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.profile-button:hover {
+  background: var(--pink);
+}
+
+#navProfileSection{
+  display: none;
+}
+
+#navProfileButton{
+  display: none;
+}
+
+.pages {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+.menu-options {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+  padding: 2px 0px;
+}
+
+.pages a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: white;
+  text-decoration: none;
+  width: 77%;
+  margin: auto;
+  margin: 0px 10px;
+  padding: 0 0 0 46px;
+}
+
+.pages a:hover {
+  background-color: var(--clear);
+  border-radius: 12px;
+  width: auto;
+}
+
+.settings,
+.logout {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  margin: 4px 4px 0 16px;
+  background: none;
+  border: none;
+  height: 52px;
+  font-size: 18px;
+  font-family: var(--font-family-poppins);
+  color: white;
+  cursor: pointer;
+  width: 95%;
+}
+
+.menu-border {
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 620px) {
+    .hero h1 {
+        font-size: 76px;
+    }
+    .titlesparkle {
+        top: -60px;
+        height: 34%;
+        margin-left: -64px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-buttons {
+    justify-content: space-between;
+    width: 100%;  
+  }
+  a.button.imagegenerator, a.button.aichat, a.button.login {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+  a.button.login {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+    .hero h1 {
+        font-size: 56px;
+    }
+    .titlesparkle {
+        top: -48px;
+        margin-left: -60px;
+    }
+    a.button.imagegenerator, a.button.aichat {
+      font-size: 13px;
+      margin-right: 6px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .hero h1 {
+        font-size: 48px;
+    }
+    .titlesparkle {
+        top: -40px;
+        margin-left: -52px;
+    }
+    a.button.imagegenerator, a.button.aichat {
+      font-size: 12px;
+      margin-right: 2px;
+      padding: 5px 5px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+  .nav-buttons {
+    justify-content: flex-end;
+    width: 100%;  
+  }
+  a.button.imagegenerator {
+    display: none;
+  }
+  a.button.aichat {
+      font-size: 14px;
+  }
+}
+
+
+</style>
+
+<div class="nav-items">
+    <a class="logo-link" href="/">
+      <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="45" height="45" rx="12" fill="white" fill-opacity="0.04"/>
+        <path d="M13.4781 27.6456V24.5259H10.5015V27.5763H13.4781V27.6456Z" fill="white"/>
+        <path d="M33.9079 25.8433C33.8402 26.1899 33.7049 26.6058 33.5696 26.9525C33.5696 27.0218 33.502 27.0911 33.502 27.1605C33.2314 27.8537 32.8931 28.4777 32.5549 29.1016C32.2166 29.5869 31.8784 30.0722 31.5401 30.4881C31.3372 30.6961 31.2019 30.9041 30.9989 31.1121L31.0666 31.0428C30.796 31.3201 30.5254 31.5974 30.1871 31.8747C30.0518 32.0133 29.8489 32.0827 29.7136 32.2213C29.6459 32.2213 29.5783 32.2906 29.5783 32.2906C29.1724 32.5679 28.7665 32.7759 28.2929 32.9839C27.7517 33.2612 27.1429 33.4692 26.534 33.6078C25.9252 33.7465 25.2487 33.8851 24.6398 33.9545C23.8957 34.0238 23.1515 34.0238 22.3397 33.8851C18.8895 33.3999 15.9806 31.3894 14.2217 28.6163C14.6276 29.1016 15.0335 29.5176 15.507 29.8642C16.3188 30.4881 17.2659 30.9734 18.3483 31.1814C18.8219 31.3201 19.3631 31.3201 19.8366 31.3201C19.9719 31.3201 20.1072 31.3201 20.2425 31.3201C20.9867 31.3201 21.7309 31.1814 22.4074 30.9041C22.5427 30.8348 22.6103 30.8348 22.7456 30.7654C22.9486 30.6961 23.2192 30.5575 23.4221 30.4881C23.4898 30.4881 23.4898 30.4188 23.5574 30.4188C25.6546 29.2403 27.2105 27.1605 27.4811 24.526C27.5488 24.0408 27.5488 23.4861 27.5488 23.0009C29.443 23.0009 30.9989 24.1794 31.8107 25.7739C31.8784 25.9819 31.946 26.1899 32.0137 26.3979C32.0137 26.2592 32.0137 26.1899 32.0137 26.0512C32.0137 25.4966 31.946 25.0113 31.8784 24.4567C31.2019 20.7824 28.0223 18.0787 24.2339 18.0787C23.7604 18.0787 23.3545 18.148 22.8809 18.2173C22.8809 18.2173 22.8809 18.2173 22.8133 18.2173C21.4603 18.4253 20.5132 18.8413 19.0248 19.9505C18.416 20.3665 17.1983 21.4757 16.2512 22.3769C15.7776 22.8622 14.9658 22.3769 15.1011 21.6837C15.2364 21.0597 15.4394 20.3665 15.8453 19.6039C13.9511 16.9001 13.9511 13.9884 17.6718 11.4233C19.8366 9.89813 23.4221 9.48217 26.737 10.7301C28.7665 9.62083 31.6754 9.5515 34.3138 12.4632C34.5844 12.7405 34.3814 13.2258 33.9755 13.2258C33.2314 13.2258 32.2166 13.4338 31.4048 14.0577C31.4725 14.1271 31.5401 14.2657 31.6754 14.4044C34.855 18.7026 34.7873 22.7236 33.9079 25.8433Z" fill="white"/>
+      </svg>
+    </a>
+    <div class="nav-buttons">
+        <a class="button aichat" href="/chat">AI Chat</a>
+        <a class="button imagegenerator" href="/machine-learning-model/text2img">AI Image Generator</a>
+        <a class="button login" id="headerLoginButton" onclick="openLogin()">Login</a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <button class="drop-menu-button" id="dropMenuButton">
+                        <img src="/static/images/HiUser.svg" class="menu-icon dropbtn" id="userIconDrop" loading="lazy"/>
+                        <img src="/static/images/IoMenu.svg" class="menu-icon dropbtn" id="sandwichIconDrop" loading="lazy"/>
+                    </button>
+                    <ul id="mainNavDropdown">
+                        <div class="exit">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.9997 10.586L16.9497 5.63599L18.3637 7.04999L13.4137 12L18.3637 16.95L16.9497 18.364L11.9997 13.414L7.04974 18.364L5.63574 16.95L10.5857 12L5.63574 7.04999L7.04974 5.63599L11.9997 10.586Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                        <div id="navProfileSection" class="nav-profile-section">
+                          <img class="usericon" id="navUserAvatar" alt="avatar" loading="lazy" onclick="window.location.replace('/dashboard/profile')" src="/static/images/dolphin-icon.jpeg" />
+                          <div class="nav-usernames">
+                            <p class="nav-profilename" id="navUserName"></p>
+                            <p class="nav-username" id="navUserEmail"></p>
+                          </div>
+                        </div>
+                        <button id="navProfileButton" class="button nav-profile-button" onclick="window.location.replace('/dashboard/profile')">View Profile</button>
+                        <div class="menu-options">
+                          <div class="pages">
+                            <a href="/apis" class="ai-generators">AI Generators</a>
+                            <a href="/pricing" class="pricing">Pricing</a>
+                            <a href="/definitions" class="glossary">Glossary</a>
+                            <a href="/docs" class="apidocs">Docs</a>
+                          </div>
+                          <div class="menu-settings">
+                            <div class="menu-border"></div>
+                            <button id="login-button-dropdown" onclick="openSignup()" class="logout">
+                              <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 13L7 16.75C7 17.3467 7.23705 17.919 7.65901 18.341C8.08097 18.7629 8.65326 19 9.25 19L15.25 19C15.8467 19 16.419 18.7629 16.841 18.341C17.2629 17.919 17.5 17.3467 17.5 16.75L17.5 3.25C17.5 2.65326 17.2629 2.08097 16.841 1.65901C16.419 1.23705 15.8467 1 15.25 1L9.25 1C8.65326 1 8.08097 1.23705 7.65901 1.65901C7.23705 2.08097 7 2.65326 7 3.25L7 7M10.75 13L13.75 10M13.75 10L10.75 7M13.75 10L0.999999 10" 
+                                stroke="white" 
+                                stroke-width="1.125" 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round"/>
+                              </svg>
+                                
+                              <!-- <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                              >
+                                <path
+                                  d="M15.75 9V5.25C15.75 4.65326 15.5129 4.08097 15.091 3.65901C14.669 3.23705 14.0967 3 13.5 3H7.5C6.90326 3 6.33097 3.23705 5.90901 3.65901C5.48705 4.08097 5.25 4.65326 5.25 5.25V18.75C5.25 19.3467 5.48705 19.919 5.90901 20.341C6.33097 20.7629 6.90326 21 7.5 21H13.5C14.0967 21 14.669 20.7629 15.091 20.341C15.5129 19.919 15.75 19.3467 15.75 18.75V15M12 9L9 12M9 12L12 15M9 12H21.75"
+                                  stroke="white"
+                                  stroke-width="1.125"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                />
+                              </svg> -->
+                              Login
+                            </button>
+                          </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+		</header>
+        
+        
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Organization",
+      "name": "DeepAI",
+      "url": "https://deepai.org",
+      "logo": "https://deepai.org/static/images/favicon.ico",
+      "sameAs": [
+        "https://twitter.com/DeepAI",
+        "https://www.linkedin.com/company/deepai"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "team@deepai.org"
+      }
+    }
+  </script>
+
+
+ <!-- <canvas
+    id="canvas"
+    style="width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0px;
+    z-index: 5;
+    position: fixed;
+    mix-blend-mode: screen;
+    opacity: 1;
+    pointer-events: none;"
+  ></canvas>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const c = canvas.getContext("2d");
+
+    let w= window.innerWidth;
+    let h= window.innerHeight;
+
+    const setCanvasExtents = () => {
+
+      canvas.width = w;
+      canvas.height = h;
+    };
+
+    setCanvasExtents();
+
+    window.onresize = () => {
+      setCanvasExtents();
+    };
+
+    const makeStars = count => {
+      const out = [];
+      for (let i = 0; i < count; i++) {
+        const s = {
+          x: Math.random() * 1600 - 800,
+          y: Math.random() * 900 - 450,
+          z: Math.random() * 1000
+        };
+        out.push(s);
+      }
+      return out;
+    };
+
+    let stars = makeStars(5000);
+
+    const clear = () => {
+      c.fillStyle = "black";
+      c.fillRect(0, 0, canvas.width, canvas.height);
+    };
+
+    const putPixel = (x, y, brightness) => {
+      const intensity = brightness * 255;
+      const rgb = "rgb(" + intensity + "," + intensity + "," + intensity + ")";
+      c.fillStyle = rgb;
+      c.fillRect(x, y, 1, 1);
+    };
+
+    const moveStars = distance => {
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const s = stars[i];
+        s.z -= distance;
+        while (s.z <= 1) {
+          s.z += 1000;
+        }
+      }
+    };
+
+    let prevTime;
+    const init = time => {
+      prevTime = time;
+      requestAnimationFrame(tick);
+    };
+
+    const tick = time => {
+      let elapsed = time - prevTime;
+      prevTime = time;
+
+      moveStars(elapsed * 0.02);
+
+      clear();
+
+      const cx = w / 2;
+      const cy = h / 2;
+
+      const count = stars.length;
+      for (var i = 0; i < count; i++) {
+        const star = stars[i];
+
+        const x = cx + star.x / (star.z * 0.001);
+        const y = cy + star.y / (star.z * 0.001);
+
+        if (x < 0 || x >= w || y < 0 || y >= h) {
+          continue;
+        }
+
+        const d = star.z / 1000.0;
+        const b = 1 - d * d;
+
+        putPixel(x, y, b);
+      }
+
+      requestAnimationFrame(tick);
+    };
+
+    requestAnimationFrame(init);
+
+    // add window resize listener:
+    window.addEventListener('resize', function() {
+      w = window.innerWidth;
+      h = window.innerHeight;
+      setCanvasExtents();
+    });
+  </script> -->
+  <!-- <div class="ocean">
+    <div class="bubble bubble--1"></div>
+    <div class="bubble bubble--2"></div>
+    <div class="bubble bubble--3"></div>
+    <div class="bubble bubble--4"></div>
+    <div class="bubble bubble--5"></div>
+    <div class="bubble bubble--6"></div>
+    <div class="bubble bubble--7"></div>
+    <div class="bubble bubble--9"></div>
+    <div class="bubble bubble--10"></div>
+    <div class="bubble bubble--11"></div>
+    <div class="bubble bubble--12"></div>
+  </div> -->
+  <!-- particles.js container -->
+  <div class="ocean">
+    <div id="particles-js"></div>
+  </div>
+
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 355,
+          "density": {
+            "enable": true,
+            "value_area": 789.1476416322727
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.48927153781200905,
+          "random": false,
+          "anim": {
+            "enable": true,
+            "speed": 0.2,
+            "opacity_min": 0,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 2,
+          "random": true,
+          "anim": {
+            "enable": true,
+            "speed": 2,
+            "size_min": 0,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": false,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 0.8,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "bubble"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 83.91608391608392,
+            "size": 1,
+            "duration": 3,
+            "opacity": 1,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+  <div class="hero">
+    <h1 class="title">
+      <div>
+        <img
+          src="/static/images/sparkle-title.svg"
+          alt="sparkle"
+          class="titlesparkle"
+          loading="lazy"
+        />
+      </div>
+      DeepAI
+    </h1>
+    <textarea class="chatbox" rows="10" cols="50" oninput="auto_grow(this)" onkeypress="textAreaKeyPressHandler(event)" placeholder="What would you like help with?"></textarea>
+    <div class="topbuttons">
+      <button id="chatSubmitButton" class="button chatbutton" onclick="chatSubmit()">Chat</button>
+      <button id="imageSubmitButton" class="button imagebutton"  onclick="imageSubmit(true)">Image</button>
+    </div>
+  </div>
+
+  <!-- <textarea class="chatbox" rows="10" cols="50" onkeypress="textAreaKeyPressHandler(event)" placeholder="What would you like help with?"></textarea>
+  <div class="submitButtonsContainer">
+  <button id="chatSubmitButton" class="mainSubmitButton" type="button" onclick="chatSubmit()">Chat</button>
+  <button id="imageSubmitButton" class="mainSubmitButton" type="button" onclick="imageSubmit()">Image</button>
+  </div> -->
+  <div class="hero-section-reefs">
+    <img
+        src="/static/images/Left-reef.svg"
+        alt="leftreef"
+        class="left-reef"
+    />
+    <div class="quote centered-content">
+      Artificially intelligent tools for <br />
+      <span class="colorful"> naturally creative humans</span>
+      <div class="background-quote-color"></div>
+    </div>
+    <img
+        src="/static/images/Right-reef.svg"
+        alt="rightreef"
+        class="right-reef"
+    />
+  </div>
+  <div class="generate-section">
+    <div class="text-to-image-section">
+      <div class="text-to-image-container">
+        <div class="text-to-image-section">AI Image Generator</div>
+        <div class="sub-title-section">
+          Enter a prompt, pick an art style and DeepAI will bring your idea to life.
+        </div>
+        <div class="animated-button image-gen-animated">
+          <a class="cta" onclick="imageSubmit(false)" href="/machine-learning-model/text2img">
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path class="button-path" d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+              <span class="hover">Text to Image</span>
+            </a>
+        </div>
+      </div>
+      <div class="card-component text-to-image-component">
+        <img
+          src="/static/images/cyberpunkdolphin.png"
+          alt=""
+          class="card-image text-to-image-image"
+        />
+        <textarea id="homepage-image-generator" class="card-title" onkeypress="textAreaKeyImagePressHandler(event)" placeholder="'Cyborg dolphin playing cards'"></textarea>
+      </div>
+      <div class="animated-button image-gen-mobile-animated">
+        <a class="cta" onclick="imageSubmit(false)" href="/machine-learning-model/text2img">
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path class="button-path" d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+            <span class="hover">Text to Image</span>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="main-reef-section">
+    <img
+      src="/static/images/mid-left.png"
+      alt="leftreef"
+      class="left-lower-reef"
+      loading="lazy"
+    />
+    <img
+      src="/static/images/mid-right.png"
+      alt="leftreef"
+      class="right-lower-reef"
+      loading="lazy"
+    />
+    <img
+      src="/static/images/gradient-left.png"
+      alt="leftreef"
+      class="left-lower-grad"
+      loading="lazy"
+    />
+    <img
+      src="/static/images/gradient-right.png"
+      alt="leftreef"
+      class="right-lower-grad"
+      loading="lazy"
+    />
+  </div>
+  <div class="generate-section generate-editor">
+    <div class="image-editor-container-mobile">
+      <div class="image-editor-title">AI Image Editor</div>
+      <div class="image-editor-subtitle">
+        Edit images in seconds by entering a<br/ > simple prompt.
+      </div>
+    </div>
+    <div class="ai-image-editor">
+      <img src="/static/images/monalisagif.gif" alt="image-editor" class="monalisa" />
+      <div class="image-editor-container">
+        <div class="image-editor-title">AI Image Editor</div>
+        <div class="image-editor-subtitle">
+          Edit images in seconds by entering a<br/ > simple prompt.
+        </div>
+        <div class="animated-button image-gen-animated">
+          <a class="cta" href="/machine-learning-model/image-editor">
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path class="button-path" d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+              <span class="hover">Modify images with AI</span>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="animated-button image-gen-mobile-animated modify-mobile-edit">
+      <a class="cta" href="/machine-learning-model/image-editor">
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path class="button-path" d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+          <span class="hover">Modify images with AI</span>
+        </a>
+    </div>
+  </div>
+    <!-- <div class="lower-section-reefs-gradient-right"></div> -->
+    <!-- <img
+        src="/static/images/mid-right.png"
+        alt="rightreef"
+        class="right-lower-reef"
+        loading="lazy"
+    /> -->
+  </div>
+  <div class="generate-section generate-char">
+    <div class="ai-characters">
+      <div class="ai-characters-title-container">
+        <div class="ai-characters-section">AI Characters</div>
+        <div class="sub-title-characters-section">
+          Want to chat with your favorite superhero? <br>
+          DeepAI allows you to dive deep into conversation with characters.
+        </div>
+        <div class="animated-button other-image-gen-animated">
+          <a class="cta" href="/characters">
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path class="button-path" d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+              <span class="hover">AI Characters</span>
+            </a>
+        </div>
+      </div>
+      <div class="ai-character-cards">
+        <div class="character-card character-mobile-extra-card">
+          <a href="/characters/Sports" class="character"><img src="/static/images/character1.png" alt="" /></a>
+          <p class="ai-label">Sports</p>
+        </div>
+        <div class="character-card">
+          <a href="/characters/Celebrities" class="character"><img src="/static/images/character2.png" alt="" /></a>
+          <p class="ai-label">Celebrities</p>
+        </div>
+        <div class="character-card">
+          <a href="/characters/TV%20Shows" class="character"><img src="/static/images/character3.png" alt="" /></a>
+          <p class="ai-label">TV Shows</p>
+        </div>
+        <div class="character-card character-mobile-extra-card">
+          <a href="/characters/Game%20Characters" class="character"><img src="/static/images/character4.png" alt="" /></a>
+          <p class="ai-label">Games</p>
+        </div>
+        <div class="character-card character-extra-card">
+          <a href="/characters/Politics" class="character"><img src="/static/images/character5.png" alt="" /></a>
+          <p class="ai-label">Politics</p>
+        </div>
+        <div class="character-card character-extra-card">
+          <a href="/characters/Billionaires" class="character"><img src="/static/images/character6.png" alt="" /></a>
+          <p class="ai-label">Billionaires</p>
+        </div>
+      </div>
+      <div class="animated-button other-image-gen-mobile-animated char-mobile-edit">
+        <a class="cta" href="/characters">
+          <svg viewBox="0 0 13 10" height="10px" width="15px">
+            <path class="button-path" d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+            <span class="hover">AI Characters</span>
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="main-reef-section">
+    <img
+      src="/static/images/lower-gradient-left.png"
+      alt="leftreef"
+      class="left-bottom-grad"
+      loading="lazy"
+    />
+    <img
+      src="/static/images/lower-gradient-right.png"
+      alt="leftreef"
+      class="right-bottom-grad"
+      loading="lazy"
+    />
+    <img
+      src="/static/images/bottom-right.png"
+      alt="leftreef"
+      class="right-bottom-reef"
+      loading="lazy"
+    />
+  </div>
+  <div class="generate-section generate-illu">
+    <div class="explore-container">
+      <div class="title-section">
+        <div class="popular-gen-title">
+          <img
+            src="/static/images/sparkle-title.svg"
+            alt="sparkle"
+            class="title-section-sparkle"
+          />Popular Generators
+        </div>
+        <p class="subheader-section explore">
+          Check out the most popular features on DeepAI
+        </p>
+      </div>
+    </div>
+    <div class="explore-cards-container">
+      <div class="illusions-main-container">
+        <div class="illusions-card-container">
+          <div class="illusions-title">Illusions</div>
+          <div class="illusions-subtitle">
+            Create illusion images using text to image generator.
+          </div>
+          <div class="animated-button other-image-gen-animated">
+            <a class="cta cta-extra" href="/machine-learning-model/text2img">
+              <svg viewBox="0 0 13 10" height="10px" width="15px">
+                <path class="button-path" d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+                <span class="hover">AI Image Generator</span>
+              </a>
+          </div>
+        </div>
+        <img class="illusions-main-image illusions-main-image-right" src="/static/images/illusion1.png" alt="" />
+        <img class="illusions-main-image illusions-main-image-left" src="/static/images/illusion2.png" alt="" />
+        <div class="animated-button other-image-gen-mobile-animated">
+          <a class="cta cta-extra" href="/machine-learning-model/text2img">
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path class="button-path" d="M1,5 L11,5"></path>
+                <polyline points="8 1 12 5 8 9"></polyline>
+              </svg>
+              <span class="hover">AI Image Generator</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="illusions-bottom-container">
+        <div class="ai-search-container">
+          <div class="ai-search-card-container">
+            <div class="ai-search-title">AI Search</div>
+            <div class="ai-search-subtitle">
+              Checkout latest trends and news, powered by AI.
+            </div>
+            <div class="animated-button">
+              <a class="cta cta-extra" href="/search">
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path class="button-path" d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                  <span class="hover">AI Search</span>
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="colorize-photos-container">
+          <div class="colorize-card-container">
+            <div class="colorize-title">Colorize Photos</div>
+            <div class="colorize-subtitle">
+              Colorize any black and white images in seconds.
+            </div>
+            <div class="animated-button">
+              <a class="cta cta-extra" href="/machine-learning-model/colorizer">
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path class="button-path" d="M1,5 L11,5"></path>
+                    <polyline points="8 1 12 5 8 9"></polyline>
+                  </svg>
+                  <span class="hover">Colorize Photos</span>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-container">
+    <div class="footerbackground" style="display: flex;">
+      <img
+        src="/static/images/Caste.svg"
+        alt="aicastle"
+        class="castle"
+        loading="lazy"
+      />
+      <div class="centered-content">
+        <img class="big-flops" src="/static/images/flops-highlighted.svg" alt="flops" loading="lazy"/>
+        <p class="centered-text">Explore your creativity</p>
+        <a href="/machine-learning-model/text2img" class="button centered-button">Start Generating</a>
+      </div>
+      <img
+        src="/static/images/mobilecastle.png"
+        alt="aismallcastle"
+        class="smaller-castle"
+        loading="lazy"
+      />
+    </div>
+  </div>
+
+
+
+
+        <dialog id="signup-modal">
+            <div class="modal-body">
+
+            </div>
+            <button id="close" class="close" type="button">&times;</button>
+        </dialog>
+        <dialog id="login-modal" class="login-container">
+            <div id="close-login" type="button" class="login-exit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M11.9997 10.586L16.9497 5.63599L18.3637 7.04999L13.4137 12L18.3637 16.95L16.9497 18.364L11.9997 13.414L7.04974 18.364L5.63574 16.95L10.5857 12L5.63574 7.04999L7.04974 5.63599L11.9997 10.586Z"
+                    fill="white"
+                  />
+                </svg>
+            </div>
+            <div style="width: 95%;">
+                <h2 class="login-header" id="login-header-title">Login</h2>
+                <p class="please-subheader">
+                    Please sign up or login with your details
+                </p>
+                <div class="options-container">
+                    <div class="option login-active active" id='loginToggle' onclick="toggleAuthOption('login')">
+                    Login
+                    </div>
+                    <div class="option signup" id='signupToggle' onclick="toggleAuthOption('signup')">
+                    Sign up
+                    </div>
+                </div>
+                <button class="signin-with-google" id="social-auth-google" onclick="social_login(event, 'google')">
+                    <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                        d="M32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z"
+                        fill="white"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M23.8299 16.1823C23.8299 15.615 23.779 15.0695 23.6845 14.5459H16.1499V17.6405H20.4554C20.2699 18.6405 19.7063 19.4877 18.859 20.055V22.0623H21.4445C22.9572 20.6695 23.8299 18.6186 23.8299 16.1823Z"
+                        fill="#4285F4"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.1496 23.9995C18.3096 23.9995 20.1205 23.2832 21.4442 22.0614L18.8587 20.0541C18.1423 20.5341 17.226 20.8177 16.1496 20.8177C14.066 20.8177 12.3023 19.4104 11.6732 17.5195H9.00049V19.5923C10.3169 22.2068 13.0223 23.9995 16.1496 23.9995Z"
+                        fill="#34A853"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.6735 17.52C11.5135 17.04 11.4226 16.5272 11.4226 16C11.4226 15.4727 11.5135 14.96 11.6735 14.48V12.4072H9.00081C8.45899 13.4872 8.1499 14.709 8.1499 16C8.1499 17.2909 8.45899 18.5127 9.00081 19.5927L11.6735 17.52Z"
+                        fill="#FBBC05"
+                    />
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.1496 11.1818C17.3241 11.1818 18.3787 11.5855 19.2078 12.3782L21.5023 10.0836C20.1169 8.79273 18.306 8 16.1496 8C13.0223 8 10.3169 9.79273 9.00049 12.4073L11.6732 14.48C12.3023 12.5891 14.066 11.1818 16.1496 11.1818Z"
+                        fill="#EA4335"
+                    />
+                    </svg>
+                    Continue with Google
+                </button>
+                <button class="signin-with-github" id="social-auth-github" onclick="social_login(event, 'github')">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 16C0 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16Z" fill="#121212"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9755 8.192C11.5719 8.192 8 11.7639 8 16.1675C8 19.6905 10.2997 22.6752 13.4312 23.7516C13.8226 23.8006 13.9694 23.5559 13.9694 23.3602C13.9694 23.1645 13.9694 22.6752 13.9694 21.9902C11.7676 22.4795 11.2783 20.9137 11.2783 20.9137C10.9358 19.984 10.3976 19.7394 10.3976 19.7394C9.66361 19.2501 10.4465 19.2501 10.4465 19.2501C11.2294 19.299 11.6697 20.0819 11.6697 20.0819C12.4037 21.3052 13.5291 20.9626 13.9694 20.7669C14.0183 20.2287 14.263 19.8862 14.4587 19.6905C12.6972 19.4948 10.8379 18.8097 10.8379 15.7272C10.8379 14.8464 11.1315 14.1614 11.6697 13.5743C11.6208 13.4275 11.3272 12.5957 11.7676 11.5192C11.7676 11.5192 12.4526 11.3235 13.9694 12.351C14.6055 12.1553 15.2905 12.1064 15.9755 12.1064C16.6606 12.1064 17.3456 12.2042 17.9817 12.351C19.4985 11.3235 20.1835 11.5192 20.1835 11.5192C20.6239 12.5957 20.3303 13.4275 20.2813 13.6232C20.7706 14.1614 21.1131 14.8954 21.1131 15.7761C21.1131 18.8587 19.2538 19.4948 17.4924 19.6905C17.7859 19.9351 18.0306 20.4244 18.0306 21.1584C18.0306 22.2348 18.0306 23.0666 18.0306 23.3602C18.0306 23.5559 18.1774 23.8006 18.5688 23.7516C21.7492 22.6752 24 19.6905 24 16.1675C23.9511 11.7639 20.3792 8.192 15.9755 8.192Z" fill="white"/>
+                    </svg>
+                    Continue with GitHub
+                </button>
+                <div class="email-container" id="email-container-id">
+                    <svg
+                      class="email-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 11L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
+                        fill="#7D7D7D"
+                      />
+                    </svg>
+
+                    <input
+                      class="input-email"
+                      id="user-email"
+                      type="text"
+                      placeholder="Enter valid email address"
+                      name="email"
+                      onkeypress="authKeyPressHandler(event)"
+                    />
+                </div>
+                <div class="password-container" id="password-container-id">
+                    <svg
+                      class="lock-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17ZM18 8H17V6C17 3.24 14.76 1 12 1C9.24 1 7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM8.9 6C8.9 4.29 10.29 2.9 12 2.9C13.71 2.9 15.1 4.29 15.1 6V8H8.9V6ZM18 20H6V10H18V20Z"
+                        fill="#7D7D7D"
+                      />
+                    </svg>
+
+                    <input
+                      class="input-password"
+                      id="user-password"
+                      type="password"
+                      placeholder="Enter your password"
+                      name="password"
+                      onkeypress="authKeyPressHandler(event)"
+                    />
+                </div>
+                <div class="reenter-password-container" id="reenter-password-container-id">
+                    <svg
+                      class="lock-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="27"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17ZM18 8H17V6C17 3.24 14.76 1 12 1C9.24 1 7 3.24 7 6V8H6C4.9 8 4 8.9 4 10V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V10C20 8.9 19.1 8 18 8ZM8.9 6C8.9 4.29 10.29 2.9 12 2.9C13.71 2.9 15.1 4.29 15.1 6V8H8.9V6ZM18 20H6V10H18V20Z"
+                        fill="#7D7D7D"
+                      />
+                    </svg>
+
+                    <input
+                      class="input-password"
+                      id="confirm-user-password"
+                      type="password"
+                      placeholder="Re-enter your password"
+                      name="password"
+                    />
+                      <path
+                        d="M10.125 10.5C10.0757 10.5001 10.0269 10.4905 9.98145 10.4716C9.93595 10.4527 9.89464 10.425 9.8599 10.3901L1.6099 2.14013C1.54254 2.06923 1.50555 1.97482 1.5068 1.87704C1.50805 1.77925 1.54745 1.68582 1.6166 1.61667C1.68575 1.54752 1.77918 1.50812 1.87697 1.50687C1.97475 1.50561 2.06916 1.54261 2.14006 1.60997L10.3901 9.85997C10.4425 9.91241 10.4782 9.97922 10.4926 10.0519C10.5071 10.1247 10.4996 10.2 10.4713 10.2685C10.4429 10.337 10.3949 10.3956 10.3332 10.4368C10.2716 10.478 10.1991 10.5 10.125 10.5V10.5ZM5.99201 9.00005C5.01959 9.00005 4.08185 8.71223 3.20482 8.14458C2.40631 7.62895 1.68748 6.89044 1.12592 6.01177V6.00989C1.59326 5.34028 2.10514 4.77403 2.65498 4.31747C2.65995 4.31331 2.66401 4.30817 2.66689 4.30236C2.66978 4.29655 2.67143 4.29021 2.67174 4.28374C2.67204 4.27726 2.67101 4.27079 2.66869 4.26474C2.66637 4.25868 2.66282 4.25317 2.65826 4.24856L2.19139 3.78239C2.18309 3.77403 2.17195 3.76909 2.16018 3.76857C2.14841 3.76805 2.13687 3.77198 2.12787 3.77958C1.54381 4.27177 1.0017 4.87552 0.508807 5.58239C0.424007 5.7041 0.377304 5.84828 0.374633 5.99659C0.371962 6.14491 0.413444 6.29067 0.493807 6.41536C1.11279 7.38403 1.90943 8.19989 2.79724 8.77434C3.79685 9.42192 4.87264 9.75005 5.99201 9.75005C6.59622 9.74817 7.19615 9.64861 7.76857 9.4552C7.77612 9.45264 7.7829 9.4482 7.78825 9.44229C7.79361 9.43638 7.79737 9.4292 7.79917 9.42143C7.80098 9.41367 7.80077 9.40557 7.79858 9.3979C7.79638 9.39024 7.79227 9.38326 7.78662 9.37763L7.28084 8.87184C7.2692 8.86049 7.2548 8.85235 7.23906 8.84824C7.22332 8.84413 7.20678 8.84419 7.19107 8.84841C6.79937 8.94927 6.39649 9.00022 5.99201 9.00005V9.00005ZM11.504 5.59223C10.8839 4.63317 10.0793 3.81848 9.1774 3.23606C8.17967 2.59106 7.0781 2.25005 5.99201 2.25005C5.39421 2.25111 4.80084 2.35276 4.23678 2.55075C4.22926 2.55337 4.22253 2.55785 4.21723 2.56378C4.21193 2.56972 4.20822 2.5769 4.20647 2.58466C4.20471 2.59242 4.20495 2.6005 4.20718 2.60814C4.20941 2.61578 4.21354 2.62273 4.2192 2.62833L4.72428 3.13341C4.73603 3.14496 4.75063 3.15322 4.7666 3.15733C4.78256 3.16145 4.79933 3.16128 4.81521 3.15684C5.19888 3.05306 5.59456 3.00034 5.99201 3.00005C6.94568 3.00005 7.8806 3.29138 8.77053 3.86723C9.58404 4.39223 10.3113 5.13005 10.8743 6.00005C10.8747 6.00058 10.8749 6.00124 10.8749 6.00192C10.8749 6.0026 10.8747 6.00326 10.8743 6.0038C10.4656 6.64714 9.95851 7.22234 9.37146 7.70841C9.36644 7.71255 9.36233 7.71769 9.3594 7.72351C9.35647 7.72933 9.35479 7.7357 9.35446 7.7422C9.35413 7.74871 9.35516 7.75521 9.35748 7.7613C9.3598 7.76738 9.36337 7.77292 9.36795 7.77755L9.83435 8.24372C9.84261 8.25205 9.85369 8.25699 9.8654 8.25755C9.87712 8.25812 9.88862 8.25427 9.89764 8.24677C10.5244 7.71907 11.0669 7.0988 11.5064 6.40739C11.5841 6.28555 11.6252 6.14397 11.6247 5.99947C11.6243 5.85497 11.5824 5.71363 11.504 5.59223V5.59223Z"
+                        fill="#7D7D7D"
+                      />
+                      <path
+                        d="M5.99999 3.75C5.83145 3.74991 5.66344 3.76878 5.49913 3.80625C5.49083 3.80797 5.48315 3.81192 5.47691 3.81766C5.47068 3.8234 5.46611 3.83072 5.46371 3.83885C5.4613 3.84698 5.46115 3.8556 5.46326 3.86381C5.46537 3.87202 5.46966 3.87951 5.47569 3.88547L8.11452 6.52359C8.12048 6.52962 8.12796 6.53392 8.13617 6.53603C8.14438 6.53814 8.15301 6.53798 8.16114 6.53558C8.16927 6.53317 8.17659 6.52861 8.18233 6.52237C8.18807 6.51613 8.19201 6.50846 8.19374 6.50016C8.26887 6.17063 8.26879 5.82842 8.19353 5.49893C8.11826 5.16944 7.96973 4.86114 7.75897 4.59692C7.54821 4.33271 7.28064 4.11937 6.97612 3.97275C6.6716 3.82613 6.33796 3.74999 5.99999 3.75V3.75ZM3.88545 5.47641C3.87949 5.47038 3.87201 5.46608 3.8638 5.46397C3.85559 5.46186 3.84696 5.46202 3.83883 5.46443C3.83071 5.46683 3.82338 5.47139 3.81764 5.47763C3.8119 5.48387 3.80796 5.49154 3.80624 5.49984C3.72124 5.87118 3.73191 6.25801 3.83725 6.62409C3.9426 6.99017 4.13916 7.32351 4.40852 7.59287C4.67788 7.86223 5.01122 8.0588 5.3773 8.16414C5.74338 8.26948 6.13022 8.28015 6.50155 8.19516C6.50985 8.19343 6.51753 8.18949 6.52376 8.18375C6.53 8.17801 6.53456 8.17069 6.53697 8.16256C6.53937 8.15443 6.53953 8.1458 6.53742 8.13759C6.53531 8.12938 6.53101 8.1219 6.52499 8.11594L3.88545 5.47641Z"
+                        fill="#7D7D7D"
+                      />
+                    </svg>
+                </div>
+                <p id="user-email-error"  class="bad-auth-error"></p>
+                <button class="button login-with-email" id="switch-to-email" onclick="authOptions('moreOptions')">Or login with email</button>
+                <button class="button login-email" id="login-via-email-id" onclick="login(event)">Login</button>
+                <a class="forgot-password" id="forgot-password">
+                    Forgot password?
+                    <span href="javascript:void();" onclick="resetPassword(event)" class="click-here">Click here to reset</span>
+                </a>
+                <button class="button goback" id="go-back-login" onclick="authOptions('lessOptions')">Go back</button>
+            </div>
+        </dialog>
+        <dialog id="subscription-modal">
+            <div id="subscription-pro-id" class="modal-small-subscription-container">
+                <div
+                  class="modal-subscriptions-container"
+                >
+                  <h2 class="modal-pricing title-section">Pricing</h2>
+                  <div class="modal-subscription-title-container">
+                    <div class="modal-subscription-title" id="subscription-title-id">DeepAI</div>
+                    <div class="modal-subscription-title pro-title" id="subscription-title-pro-id">PRO</div>
+                  </div>
+                  <div class="modal-subscriptions-subheader" id="subscriptions-subheader-id">DeepAI PRO member</div>
+                  <div class="modal-subscription-price">
+                    <div class="modal-price" id="subscription-price-id"> $4.99 </div>
+                    <div class="modal-subscription-length" id="subscription-length-id">/month</div>
+                  </div>
+
+                  <button class="button modal-get-started" id="subscription-start-id" onclick="changePaymentModalState('start')">Get Started</button>
+
+                <div class="options-container membership-toggle" id="membership-toggle-id">
+                    <div class="option member-active active" id='proToggle' onclick="toggleMembershipOption('pro')">
+                        PRO
+                    </div>
+                    <div class="option member-active member-go" id='payGoToggle' onclick="toggleMembershipOption('go')">
+                        Pay As You Go
+                    </div>
+                </div>
+
+                  <div class="modal-subscription-section" id="modal-subscription-section-id">
+                    <div class="modal-overview-subscription-section">
+                      <ul class="modal-overview">
+                        <li class="modal-generation-overview">
+                          <p class="modal-overview-title modal-value2">Generation Overview</p>
+                          <p class="modal-overview-title">AI Generator calls</p>
+                          <p class="modal-overview-title">AI Chat messages</p>
+                          <p class="modal-overview-title">Genius Mode messages</p>
+                          <p class="modal-overview-title">Genius Mode images</p>
+                          <p class="modal-overview-title">AD-free experience</p>
+                          <p class="modal-overview-title">Private images</p>
+                          <p class="modal-overview-title modal-api-value">API access</p>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <ul class="modal-overview">
+                      <li>
+                        <p class="modal-value modal-value2" id="gen-calls-per" style="border: none;">Per month</p>
+                        <p class="modal-value" id="gen-calls-value">500</p>
+                        <p class="modal-value" id="chat-calls-value">1750</p>
+                        <p class="modal-value" id="genius-messages-value">60</p>
+                        <p class="modal-value" id="genius-images-value">60</p>
+                        <p class="modal-value">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="white" />
+                            <path
+                              d="M10.8333 13.8503L16.1953 8.48776L17.0207 9.3126L10.8333 15.5L7.12097 11.7877L7.94581 10.9628L10.8333 13.8503Z"
+                              fill="#2D3748"
+                            />
+                          </svg>
+                        </p>
+                        <p class="modal-value">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="white" />
+                            <path
+                              d="M10.8333 13.8503L16.1953 8.48776L17.0207 9.3126L10.8333 15.5L7.12097 11.7877L7.94581 10.9628L10.8333 13.8503Z"
+                              fill="#2D3748"
+                            />
+                          </svg>
+                        </p>
+                        <p class="modal-value modal-api-value">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="12" cy="12" r="12" fill="white" />
+                            <path
+                              d="M10.8333 13.8503L16.1953 8.48776L17.0207 9.3126L10.8333 15.5L7.12097 11.7877L7.94581 10.9628L10.8333 13.8503Z"
+                              fill="#2D3748"
+                            />
+                          </svg>
+                        </p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="get-started-container" id="get-started-container-id">
+                    <button class="button go-back-subscription" onclick="changePaymentModalState('back')">Go back</button>
+
+                    <ul id="sub-terms-pro" class="sub-terms-pro-styling">
+                        <li class="subscription-terms">Includes 500 AI Image generations, 1750 AI Chat Messages, 60 Genius Mode Messages and 60 Genius Mode Images per month. If you go over any of these limits, you will be charged an extra $5 for that group. </li>
+                        </li>
+                        <li class="subscription-terms">For example: if you go over 500 AI images, but stay within the limits for AI Chat and Genius Mode, you'll be charged $5 per additional 500 AI Image generations.</li>
+                        </li>
+                    </ul>
+
+                    <ul id="sub-terms-go" class="sub-terms-go-styling">
+                        <li class="subscription-terms">Includes 100 AI Image generations and 300 AI Chat Messages. If you go over any of these limits, you will have to pay as you go.  </li>
+                        </li>
+                        <li class="subscription-terms">For example: if you go over 100 AI images, but stay within the limits for AI Chat, you'll have to reload on credits to generate more images. Choose from $5 - $1000. You'll only pay for what you use.</li>
+                        </li>
+                    </ul>
+
+                    <div class="subscribe-to" id="subscribe-to-id">Subscribe to PRO using:</div>
+                    <div class="payment-container" id="payment-container-pro">
+                        <div class="options-container payment-options">
+                          <div class="option stripe-pay-active active" id='stripeProToggle' onclick="togglePaymentOption('stripePro')">
+                          Stripe
+                          </div>
+                          <div class="option paypal-pay" id='paypalProToggle' onclick="togglePaymentOption('paypalPro')">
+                          Paypal
+                          </div>
+                        </div>
+                    </div>
+                    <div class="payment-container" id="payment-container-go">
+                        <div class="options-container payment-options">
+                          <div class="option stripe-pay-active active" id='stripeGoToggle' onclick="togglePaymentOption('stripeGo')">
+                          Stripe
+                          </div>
+                          <div class="option paypal-pay" id='paypalGoToggle' onclick="togglePaymentOption('paypalGo')">
+                          Paypal
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown-payment-amount" id="modal-dropdown-payment-amount">
+                        <div class="dataset">
+                          <select
+                            id="addCreditsAmountSelect"
+                            class="dropdown-select dropdown-input-amount"
+                            name="chooseAmount"
+                          >
+                            <option disabled selected value="5">$5.00 USD</option>
+                            <option value="5">$5.00 USD</option>
+                            <option value="10">$10.00 USD</option>
+                            <option value="20">$20.00 USD</option>
+                            <option value="50">$50.00 USD</option>
+                            <option value="100">$100.00 USD</option>
+                            <option value="200">$200.00 USD</option>
+                            <option value="500">$500.00 USD</option>
+                            <option value="1000">$1000.00 USD</option>
+                          </select>
+
+                          <svg
+                            class="money-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                          >
+                            <path
+                              d="M11.8003 10.9C9.53031 10.31 8.80031 9.7 8.80031 8.75C8.80031 7.66 9.81031 6.9 11.5003 6.9C13.2803 6.9 13.9403 7.75 14.0003 9H16.2103C16.1403 7.28 15.0903 5.7 13.0003 5.19V3H10.0003V5.16C8.06031 5.58 6.50031 6.84 6.50031 8.77C6.50031 11.08 8.41031 12.23 11.2003 12.9C13.7003 13.5 14.2003 14.38 14.2003 15.31C14.2003 16 13.7103 17.1 11.5003 17.1C9.44031 17.1 8.63031 16.18 8.52031 15H6.32031C6.44031 17.19 8.08031 18.42 10.0003 18.83V21H13.0003V18.85C14.9503 18.48 16.5003 17.35 16.5003 15.3C16.5003 12.46 14.0703 11.49 11.8003 10.9Z"
+                              fill="#7D7D7D"
+                            />
+                          </svg>
+
+                          <svg
+                            class="dropdown-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
+                              fill="white"
+                            />
+                          </svg>
+                        </div>
+                    </div>
+
+                    <button id="stripe-pro-button-container" class="modal-get-started" onclick="window.open(deepaiProLinkUrl, '_blank')">Subscribe</button>
+                    <div id="paypal-button-container-sub-popup">
+                        <div class="paypal-styling" id="paypal-button-container-P-9LT69365YG9885149MPMFULA"></div>
+                    </div>
+                    <button id="stripe-go-button-container" onclick="window.open(deepaiAddCreditsLinkUrl, '_blank')" class="modal-get-started">Add Credits</button>
+                    <div class="paypal-styling" id="paypal-button-container"></div>
+
+                  </div>
+                <a class="modal-see-full" href="/pricing">
+                    See Full Pricing Page
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="19"
+                      viewBox="0 0 18 19"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M3.8248 5.44998C3.64578 5.44998 3.47409 5.52109 3.34751 5.64768C3.22092 5.77427 3.1498 5.94595 3.1498 6.12498V13.775C3.1498 14.1476 3.4522 14.45 3.8248 14.45H11.4748C11.6538 14.45 11.8255 14.3789 11.9521 14.2523C12.0787 14.1257 12.1498 13.954 12.1498 13.775V10.175C12.1498 9.99595 12.2209 9.82427 12.3475 9.69768C12.4741 9.57109 12.6458 9.49998 12.8248 9.49998C13.0038 9.49998 13.1755 9.57109 13.3021 9.69768C13.4287 9.82427 13.4998 9.99595 13.4998 10.175V13.775C13.4998 14.312 13.2865 14.8271 12.9067 15.2069C12.5269 15.5866 12.0119 15.8 11.4748 15.8H3.8248C3.28774 15.8 2.77267 15.5866 2.39291 15.2069C2.01315 14.8271 1.7998 14.312 1.7998 13.775V6.12498C1.7998 5.58791 2.01315 5.07285 2.39291 4.69308C2.77267 4.31332 3.28774 4.09998 3.8248 4.09998H8.3248C8.50383 4.09998 8.67551 4.17109 8.8021 4.29768C8.92869 4.42427 8.9998 4.59595 8.9998 4.77498C8.9998 4.954 8.92869 5.12569 8.8021 5.25227C8.67551 5.37886 8.50383 5.44998 8.3248 5.44998H3.8248Z"
+                        fill="#C3CAD9"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.57465 11.9777C5.63413 12.0436 5.706 12.097 5.78615 12.135C5.8663 12.1731 5.95316 12.1949 6.04176 12.1994C6.13036 12.2038 6.21897 12.1907 6.30252 12.1609C6.38606 12.131 6.4629 12.085 6.52865 12.0254L14.85 4.49605V7.02505C14.85 7.20407 14.9212 7.37576 15.0478 7.50235C15.1743 7.62893 15.346 7.70005 15.525 7.70005C15.7041 7.70005 15.8758 7.62893 16.0023 7.50235C16.1289 7.37576 16.2 7.20407 16.2 7.02505V2.97505C16.2 2.79603 16.1289 2.62434 16.0023 2.49775C15.8758 2.37116 15.7041 2.30005 15.525 2.30005H11.475C11.296 2.30005 11.1243 2.37116 10.9978 2.49775C10.8712 2.62434 10.8 2.79603 10.8 2.97505C10.8 3.15407 10.8712 3.32576 10.9978 3.45235C11.1243 3.57893 11.296 3.65005 11.475 3.65005H13.7727L5.62235 11.0246C5.55653 11.0841 5.50308 11.156 5.46505 11.2361C5.42703 11.3163 5.40517 11.4032 5.40074 11.4918C5.39631 11.5804 5.40939 11.669 5.43923 11.7525C5.46907 11.8361 5.51509 11.912 5.57465 11.9777Z"
+                        fill="#C3CAD9"
+                      />
+                    </svg>
+                </a>
+                </div>
+                <button id="close-sub" class="close" type="button">&times;</button>
+            </div>
+            </div>
+        </dialog>
+        <dialog id="out-of-credits-modal">
+            <div class="modal-body out-of-credits-modal-body">
+                <div id="close-out-of-credits" type="button" class="out-credits-exit">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M11.9997 10.586L16.9497 5.63599L18.3637 7.04999L13.4137 12L18.3637 16.95L16.9497 18.364L11.9997 13.414L7.04974 18.364L5.63574 16.95L10.5857 12L5.63574 7.04999L7.04974 5.63599L11.9997 10.586Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </div>
+                <div>
+                  <h2 class="out-credits-header">Out of credits</h2>
+                  <p class="please-subheader">
+                    Refill your membership to continue using DeepAI
+                  </p>
+
+                  <div class="payment-container">
+                    <div class="options-container">
+                      <div class="option stripe-pay-active active" id='outstripeGoToggle' onclick="togglePaymentOption('stripeGo')">
+                      Stripe
+                      </div>
+                      <div class="option paypal-pay" id='outpaypalGoToggle' onclick="togglePaymentOption('paypalGo')">
+                      Paypal
+                      </div>
+                  </div>
+
+                    <div class="dropdown-payment-amount go-dropdown">
+                      <div class="dataset">
+                        <select
+                          id="outOfCreditsAmountSelect"
+                          class="dropdown-select dropdown-input-amount"
+                          name="chooseAmount"
+                        >
+                          <option disabled selected>$5.00 USD</option>
+                          <option value="5">$5.00 USD</option>
+                          <option value="10">$10.00 USD</option>
+                          <option value="20">$20.00 USD</option>
+                          <option value="50">$50.00 USD</option>
+                          <option value="100">$100.00 USD</option>
+                          <option value="200">$200.00 USD</option>
+                          <option value="500">$500.00 USD</option>
+                          <option value="1000">$1000.00 USD</option>
+                        </select>
+
+                        <svg
+                          class="money-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M11.8003 10.9C9.53031 10.31 8.80031 9.7 8.80031 8.75C8.80031 7.66 9.81031 6.9 11.5003 6.9C13.2803 6.9 13.9403 7.75 14.0003 9H16.2103C16.1403 7.28 15.0903 5.7 13.0003 5.19V3H10.0003V5.16C8.06031 5.58 6.50031 6.84 6.50031 8.77C6.50031 11.08 8.41031 12.23 11.2003 12.9C13.7003 13.5 14.2003 14.38 14.2003 15.31C14.2003 16 13.7103 17.1 11.5003 17.1C9.44031 17.1 8.63031 16.18 8.52031 15H6.32031C6.44031 17.19 8.08031 18.42 10.0003 18.83V21H13.0003V18.85C14.9503 18.48 16.5003 17.35 16.5003 15.3C16.5003 12.46 14.0703 11.49 11.8003 10.9Z"
+                            fill="#7D7D7D"
+                          />
+                        </svg>
+
+                        <svg
+                          class="dropdown-icon"
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.59 8.58997L12 13.17L7.41 8.58997L6 9.99997L12 16L18 9.99997L16.59 8.58997Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <button id="out-stripe-go-button-container" onclick="window.open(deepaiAddCreditsLinkUrl, '_blank')" class="button modal-get-started">Add Credits</button>
+                  <div id="paypal-button-container-out-of-credits" class="paypal-styling paypal-cred"></div>
+                </div>
+              </div>
+        </dialog>
+        <dialog id="social-modal">
+            <div class="modal-body">
+                <div id="social-image" class="thumbnail"></div>
+                <p class="title">SHARE<br><b id="share_title"></b></p>
+                <p class="subtitle"></p>
+                <div class="social-container">
+                    <a id="tw-link" target="_blank">
+                        <img src="/static/images/twitter-icon-medium.png">
+                    </a>
+                    <a id="lkdin-link" target="_blank">
+                        <img src="/static/images/linkedin-icon-medium.png">
+                    </a>
+                    <a id="fb-link" target="_blank">
+                        <img src="/static/images/facebook-icon.png">
+                    </a>
+                </div>
+            </div>
+            <button id="close-social" class="close" type="button">&times;</button>
+        </dialog>
+
+        
+		<footer>
+			
+			
+			
+			
+
+
+            <div class="footer-row">
+                <div class="leftfooter">
+                    <a href="/">
+                        <img src="/static/images/SmallFlops.svg" alt="flops" />
+                        <p>DeepAI</p>
+                    </a>
+                </div>
+                <div class="rightfooter">
+                    <!--   Freestar / Sourcepoint CMP button   -->
+                    <!-- HTML for geo depending button -->
+                    <button id="pmLink">Privacy Manager</button>
+                    <a href="mailto:team@deepai.org" class="contact">Contact</a>
+                    <a href="/press" class="press">Press</a>
+                    <a href="/terms-of-service/terms-of-service" class="legal">Legal</a>
+                    <a class=" " href="https://twitter.com/DeepAI" target="_blank"><img src="/static/images/xLogo.svg" alt="xlogo" class="xlogo" /></a>
+                    <a class=" " href="https://www.linkedin.com/company/deepai" target="_blank"><img
+                      src="/static/images/LinkedinLogo.svg"
+                      alt="linkedinlogo"
+                      class="linkedinlogo"
+                    /></a>
+                </div>
+            </div>
+
+			
+		</footer>
+        
+    <script>var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(a){return a.raw=a};$jscomp.createTemplateTagFirstArgWithRaw=function(a,b){a.raw=b;return a};$jscomp.arrayIteratorImpl=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):$jscomp.arrayIterator(a)};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;$jscomp.ISOLATE_POLYFILLS=!1;$jscomp.FORCE_POLYFILL_PROMISE=!1;$jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION=!1;$jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){if(a==Array.prototype||a==Object.prototype)return a;a[b]=c.value;return a};$jscomp.getGlobal=function(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");};$jscomp.global=$jscomp.getGlobal(this);$jscomp.IS_SYMBOL_NATIVE="function"===typeof Symbol&&"symbol"===typeof Symbol("x");$jscomp.TRUST_ES6_POLYFILLS=!$jscomp.ISOLATE_POLYFILLS||$jscomp.IS_SYMBOL_NATIVE;$jscomp.polyfills={};$jscomp.propertyToPolyfillSymbol={};$jscomp.POLYFILL_PREFIX="$jscp$";var $jscomp$lookupPolyfilledValue=function(a,b){var c=$jscomp.propertyToPolyfillSymbol[b];if(null==c)return a[b];c=a[c];return void 0!==c?c:a[b]};$jscomp.polyfill=function(a,b,c,e){b&&($jscomp.ISOLATE_POLYFILLS?$jscomp.polyfillIsolated(a,b,c,e):$jscomp.polyfillUnisolated(a,b,c,e))};$jscomp.polyfillUnisolated=function(a,b,c,e){c=$jscomp.global;a=a.split(".");for(e=0;e<a.length-1;e++){var f=a[e];if(!(f in c))return;c=c[f]}a=a[a.length-1];e=c[a];b=b(e);b!=e&&null!=b&&$jscomp.defineProperty(c,a,{configurable:!0,writable:!0,value:b})};$jscomp.polyfillIsolated=function(a,b,c,e){var f=a.split(".");a=1===f.length;e=f[0];e=!a&&e in $jscomp.polyfills?$jscomp.polyfills:$jscomp.global;for(var g=0;g<f.length-1;g++){var d=f[g];if(!(d in e))return;e=e[d]}f=f[f.length-1];c=$jscomp.IS_SYMBOL_NATIVE&&"es6"===c?e[f]:null;b=b(c);null!=b&&(a?$jscomp.defineProperty($jscomp.polyfills,f,{configurable:!0,writable:!0,value:b}):b!==c&&(void 0===$jscomp.propertyToPolyfillSymbol[f]&&(c=1E9*Math.random()>>>0,$jscomp.propertyToPolyfillSymbol[f]=$jscomp.IS_SYMBOL_NATIVE?$jscomp.global.Symbol(f):$jscomp.POLYFILL_PREFIX+c+"$"+f),$jscomp.defineProperty(e,$jscomp.propertyToPolyfillSymbol[f],{configurable:!0,writable:!0,value:b})))};$jscomp.underscoreProtoCanBeSet=function(){var a={a:!0},b={};try{return b.__proto__=a,b.a}catch(c){}return!1};$jscomp.setPrototypeOf=$jscomp.TRUST_ES6_POLYFILLS&&"function"==typeof Object.setPrototypeOf?Object.setPrototypeOf:$jscomp.underscoreProtoCanBeSet()?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null;$jscomp.generator={};$jscomp.generator.ensureIteratorResultIsObject_=function(a){if(!(a instanceof Object))throw new TypeError("Iterator result "+a+" is not an object");};$jscomp.generator.Context=function(){this.isRunning_=!1;this.yieldAllIterator_=null;this.yieldResult=void 0;this.nextAddress=1;this.finallyAddress_=this.catchAddress_=0;this.finallyContexts_=this.abruptCompletion_=null};$jscomp.generator.Context.prototype.start_=function(){if(this.isRunning_)throw new TypeError("Generator is already running");this.isRunning_=!0};$jscomp.generator.Context.prototype.stop_=function(){this.isRunning_=!1};$jscomp.generator.Context.prototype.jumpToErrorHandler_=function(){this.nextAddress=this.catchAddress_||this.finallyAddress_};$jscomp.generator.Context.prototype.next_=function(a){this.yieldResult=a};$jscomp.generator.Context.prototype.throw_=function(a){this.abruptCompletion_={exception:a,isException:!0};this.jumpToErrorHandler_()};$jscomp.generator.Context.prototype.return=function(a){this.abruptCompletion_={return:a};this.nextAddress=this.finallyAddress_};$jscomp.generator.Context.prototype.jumpThroughFinallyBlocks=function(a){this.abruptCompletion_={jumpTo:a};this.nextAddress=this.finallyAddress_};$jscomp.generator.Context.prototype.yield=function(a,b){this.nextAddress=b;return{value:a}};$jscomp.generator.Context.prototype.yieldAll=function(a,b){a=$jscomp.makeIterator(a);var c=a.next();$jscomp.generator.ensureIteratorResultIsObject_(c);if(c.done)this.yieldResult=c.value,this.nextAddress=b;else return this.yieldAllIterator_=a,this.yield(c.value,b)};$jscomp.generator.Context.prototype.jumpTo=function(a){this.nextAddress=a};$jscomp.generator.Context.prototype.jumpToEnd=function(){this.nextAddress=0};$jscomp.generator.Context.prototype.setCatchFinallyBlocks=function(a,b){this.catchAddress_=a;void 0!=b&&(this.finallyAddress_=b)};$jscomp.generator.Context.prototype.setFinallyBlock=function(a){this.catchAddress_=0;this.finallyAddress_=a||0};$jscomp.generator.Context.prototype.leaveTryBlock=function(a,b){this.nextAddress=a;this.catchAddress_=b||0};$jscomp.generator.Context.prototype.enterCatchBlock=function(a){this.catchAddress_=a||0;a=this.abruptCompletion_.exception;this.abruptCompletion_=null;return a};$jscomp.generator.Context.prototype.enterFinallyBlock=function(a,b,c){c?this.finallyContexts_[c]=this.abruptCompletion_:this.finallyContexts_=[this.abruptCompletion_];this.catchAddress_=a||0;this.finallyAddress_=b||0};$jscomp.generator.Context.prototype.leaveFinallyBlock=function(a,b){b=this.finallyContexts_.splice(b||0)[0];if(b=this.abruptCompletion_=this.abruptCompletion_||b){if(b.isException)return this.jumpToErrorHandler_();void 0!=b.jumpTo&&this.finallyAddress_<b.jumpTo?(this.nextAddress=b.jumpTo,this.abruptCompletion_=null):this.nextAddress=this.finallyAddress_}else this.nextAddress=a};$jscomp.generator.Context.prototype.forIn=function(a){return new $jscomp.generator.Context.PropertyIterator(a)};$jscomp.generator.Context.PropertyIterator=function(a){this.object_=a;this.properties_=[];for(var b in a)this.properties_.push(b);this.properties_.reverse()};$jscomp.generator.Context.PropertyIterator.prototype.getNext=function(){for(;0<this.properties_.length;){var a=this.properties_.pop();if(a in this.object_)return a}return null};$jscomp.generator.Engine_=function(a){this.context_=new $jscomp.generator.Context;this.program_=a};$jscomp.generator.Engine_.prototype.next_=function(a){this.context_.start_();if(this.context_.yieldAllIterator_)return this.yieldAllStep_(this.context_.yieldAllIterator_.next,a,this.context_.next_);this.context_.next_(a);return this.nextStep_()};$jscomp.generator.Engine_.prototype.return_=function(a){this.context_.start_();var b=this.context_.yieldAllIterator_;if(b)return this.yieldAllStep_("return"in b?b["return"]:function(c){return{value:c,done:!0}},a,this.context_.return);this.context_.return(a);return this.nextStep_()};$jscomp.generator.Engine_.prototype.throw_=function(a){this.context_.start_();if(this.context_.yieldAllIterator_)return this.yieldAllStep_(this.context_.yieldAllIterator_["throw"],a,this.context_.next_);this.context_.throw_(a);return this.nextStep_()};$jscomp.generator.Engine_.prototype.yieldAllStep_=function(a,b,c){try{var e=a.call(this.context_.yieldAllIterator_,b);$jscomp.generator.ensureIteratorResultIsObject_(e);if(!e.done)return this.context_.stop_(),e;var f=e.value}catch(g){return this.context_.yieldAllIterator_=null,this.context_.throw_(g),this.nextStep_()}this.context_.yieldAllIterator_=null;c.call(this.context_,f);return this.nextStep_()};$jscomp.generator.Engine_.prototype.nextStep_=function(){for(;this.context_.nextAddress;)try{var a=this.program_(this.context_);if(a)return this.context_.stop_(),{value:a.value,done:!1}}catch(b){this.context_.yieldResult=void 0,this.context_.throw_(b)}this.context_.stop_();if(this.context_.abruptCompletion_){a=this.context_.abruptCompletion_;this.context_.abruptCompletion_=null;if(a.isException)throw a.exception;return{value:a.return,done:!0}}return{value:void 0,done:!0}};$jscomp.generator.Generator_=function(a){this.next=function(b){return a.next_(b)};this.throw=function(b){return a.throw_(b)};this.return=function(b){return a.return_(b)};this[Symbol.iterator]=function(){return this}};$jscomp.generator.createGenerator=function(a,b){b=new $jscomp.generator.Generator_(new $jscomp.generator.Engine_(b));$jscomp.setPrototypeOf&&a.prototype&&$jscomp.setPrototypeOf(b,a.prototype);return b};$jscomp.asyncExecutePromiseGenerator=function(a){function b(e){return a.next(e)}function c(e){return a.throw(e)}return new Promise(function(e,f){function g(d){d.done?e(d.value):Promise.resolve(d.value).then(b,c).then(g,f)}g(a.next())})};$jscomp.asyncExecutePromiseGeneratorFunction=function(a){return $jscomp.asyncExecutePromiseGenerator(a())};$jscomp.asyncExecutePromiseGeneratorProgram=function(a){return $jscomp.asyncExecutePromiseGenerator(new $jscomp.generator.Generator_(new $jscomp.generator.Engine_(a)))};$jscomp.initSymbol=function(){};$jscomp.polyfill("Symbol",function(a){if(a)return a;var b=function(g,d){this.$jscomp$symbol$id_=g;$jscomp.defineProperty(this,"description",{configurable:!0,writable:!0,value:d})};b.prototype.toString=function(){return this.$jscomp$symbol$id_};var c="jscomp_symbol_"+(1E9*Math.random()>>>0)+"_",e=0,f=function(g){if(this instanceof f)throw new TypeError("Symbol is not a constructor");return new b(c+(g||"")+"_"+e++,g)};return f},"es6","es3");$jscomp.polyfill("Symbol.iterator",function(a){if(a)return a;a=Symbol("Symbol.iterator");for(var b="Array Int8Array Uint8Array Uint8ClampedArray Int16Array Uint16Array Int32Array Uint32Array Float32Array Float64Array".split(" "),c=0;c<b.length;c++){var e=$jscomp.global[b[c]];"function"===typeof e&&"function"!=typeof e.prototype[a]&&$jscomp.defineProperty(e.prototype,a,{configurable:!0,writable:!0,value:function(){return $jscomp.iteratorPrototype($jscomp.arrayIteratorImpl(this))}})}return a},"es6","es3");$jscomp.iteratorPrototype=function(a){a={next:a};a[Symbol.iterator]=function(){return this};return a};$jscomp.polyfill("Promise",function(a){function b(){this.batch_=null}function c(d){return d instanceof f?d:new f(function(h,k){h(d)})}if(a&&(!($jscomp.FORCE_POLYFILL_PROMISE||$jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION&&"undefined"===typeof $jscomp.global.PromiseRejectionEvent)||!$jscomp.global.Promise||-1===$jscomp.global.Promise.toString().indexOf("[native code]")))return a;b.prototype.asyncExecute=function(d){if(null==this.batch_){this.batch_=[];var h=this;this.asyncExecuteFunction(function(){h.executeBatch_()})}this.batch_.push(d)};var e=$jscomp.global.setTimeout;b.prototype.asyncExecuteFunction=function(d){e(d,0)};b.prototype.executeBatch_=function(){for(;this.batch_&&this.batch_.length;){var d=this.batch_;this.batch_=[];for(var h=0;h<d.length;++h){var k=d[h];d[h]=null;try{k()}catch(l){this.asyncThrow_(l)}}}this.batch_=null};b.prototype.asyncThrow_=function(d){this.asyncExecuteFunction(function(){throw d;})};var f=function(d){this.state_=0;this.result_=void 0;this.onSettledCallbacks_=[];this.isRejectionHandled_=!1;var h=this.createResolveAndReject_();try{d(h.resolve,h.reject)}catch(k){h.reject(k)}};f.prototype.createResolveAndReject_=function(){function d(l){return function(m){k||(k=!0,l.call(h,m))}}var h=this,k=!1;return{resolve:d(this.resolveTo_),reject:d(this.reject_)}};f.prototype.resolveTo_=function(d){if(d===this)this.reject_(new TypeError("A Promise cannot resolve to itself"));else if(d instanceof f)this.settleSameAsPromise_(d);else{a:switch(typeof d){case"object":var h=null!=d;break a;case"function":h=!0;break a;default:h=!1}h?this.resolveToNonPromiseObj_(d):this.fulfill_(d)}};f.prototype.resolveToNonPromiseObj_=function(d){var h=void 0;try{h=d.then}catch(k){this.reject_(k);return}"function"==typeof h?this.settleSameAsThenable_(h,d):this.fulfill_(d)};f.prototype.reject_=function(d){this.settle_(2,d)};f.prototype.fulfill_=function(d){this.settle_(1,d)};f.prototype.settle_=function(d,h){if(0!=this.state_)throw Error("Cannot settle("+d+", "+h+"): Promise already settled in state"+this.state_);this.state_=d;this.result_=h;2===this.state_&&this.scheduleUnhandledRejectionCheck_();this.executeOnSettledCallbacks_()};f.prototype.scheduleUnhandledRejectionCheck_=function(){var d=this;e(function(){if(d.notifyUnhandledRejection_()){var h=$jscomp.global.console;"undefined"!==typeof h&&h.error(d.result_)}},1)};f.prototype.notifyUnhandledRejection_=function(){if(this.isRejectionHandled_)return!1;var d=$jscomp.global.CustomEvent,h=$jscomp.global.Event,k=$jscomp.global.dispatchEvent;if("undefined"===typeof k)return!0;"function"===typeof d?d=new d("unhandledrejection",{cancelable:!0}):"function"===typeof h?d=new h("unhandledrejection",{cancelable:!0}):(d=$jscomp.global.document.createEvent("CustomEvent"),d.initCustomEvent("unhandledrejection",!1,!0,d));d.promise=this;d.reason=this.result_;return k(d)};f.prototype.executeOnSettledCallbacks_=function(){if(null!=this.onSettledCallbacks_){for(var d=0;d<this.onSettledCallbacks_.length;++d)g.asyncExecute(this.onSettledCallbacks_[d]);this.onSettledCallbacks_=null}};var g=new b;f.prototype.settleSameAsPromise_=function(d){var h=this.createResolveAndReject_();d.callWhenSettled_(h.resolve,h.reject)};f.prototype.settleSameAsThenable_=function(d,h){var k=this.createResolveAndReject_();try{d.call(h,k.resolve,k.reject)}catch(l){k.reject(l)}};f.prototype.then=function(d,h){function k(p,q){return"function"==typeof p?function(t){try{l(p(t))}catch(u){m(u)}}:q}var l,m,n=new f(function(p,q){l=p;m=q});this.callWhenSettled_(k(d,l),k(h,m));return n};f.prototype.catch=function(d){return this.then(void 0,d)};f.prototype.callWhenSettled_=function(d,h){function k(){switch(l.state_){case 1:d(l.result_);break;case 2:h(l.result_);break;default:throw Error("Unexpected state: "+l.state_);}}var l=this;null==this.onSettledCallbacks_?g.asyncExecute(k):this.onSettledCallbacks_.push(k);this.isRejectionHandled_=!0};f.resolve=c;f.reject=function(d){return new f(function(h,k){k(d)})};f.race=function(d){return new f(function(h,k){for(var l=$jscomp.makeIterator(d),m=l.next();!m.done;m=l.next())c(m.value).callWhenSettled_(h,k)})};f.all=function(d){var h=$jscomp.makeIterator(d),k=h.next();return k.done?c([]):new f(function(l,m){function n(t){return function(u){p[t]=u;q--;0==q&&l(p)}}var p=[],q=0;do p.push(void 0),q++,c(k.value).callWhenSettled_(n(p.length-1),m),k=h.next();while(!k.done)})};return f},"es6","es3");$jscomp.owns=function(a,b){return Object.prototype.hasOwnProperty.call(a,b)};$jscomp.polyfill("Object.entries",function(a){return a?a:function(b){var c=[],e;for(e in b)$jscomp.owns(b,e)&&c.push([e,b[e]]);return c}},"es8","es3");$jscomp.polyfill("Array.from",function(a){return a?a:function(b,c,e){c=null!=c?c:function(h){return h};var f=[],g="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];if("function"==typeof g){b=g.call(b);for(var d=0;!(g=b.next()).done;)f.push(c.call(e,g.value,d++))}else for(g=b.length,d=0;d<g;d++)f.push(c.call(e,b[d],d));return f}},"es6","es3");try{"deepai.org"!==window.location.hostname&&"deep.ai"!==window.location.hostname&&"127.0.0.1"!==window.location.hostname&&(window.location.href="https://deepai.org"+window.location.pathname+window.location.search)}catch(a){console.log("error redirecting to deepai.org: "+a)}try{(function(a){a.location!==a.top.location&&(a.top.location=a.location)})(this)}catch(a){console.log("error breaking out of iframe",a)}var app_base_url="https://api.deepai.org";fetch(app_base_url+"/favicon.ico",{method:"POST",credentials:"include"});function setElementsStyleById(a,b){a.forEach(function(c){return document.getElementById(c).style=b})}function showElementsById(a){setElementsStyleById(a,"display: flex;")}function hideElementsById(a){setElementsStyleById(a,"display: none;")}
+function toggleAuthOption(a){var b=document.getElementById("loginToggle"),c=document.getElementById("signupToggle"),e=document.getElementById("social-auth-google"),f=document.getElementById("social-auth-github"),g=document.getElementById("switch-to-email"),d=document.getElementById("login-via-email-id"),h=document.getElementById("user-email-error"),k=document.getElementById("reenter-password-container-id");document.getElementById("user-email").focus();h.style="display: none;";"login"==a?(b.classList.contains("active")||(b.classList.add("active"),c.classList.remove("active")),document.getElementById("login-header-title").innerHTML="Login",e.setAttribute("onclick","social_login(event, 'google')"),f.setAttribute("onclick","social_login(event, 'github')"),g.innerHTML="Or login with email",g.setAttribute("onclick","authOptions('moreOptions')"),hideElementsById(["reenter-password-container-id","user-email-error"]),d.innerHTML="Login",d.setAttribute("onclick","login(event)")):(c.classList.contains("active")||(c.classList.add("active"),b.classList.remove("active")),document.getElementById("login-header-title").innerHTML="Signup",e.setAttribute("onclick","social_signup(event, 'google')"),f.setAttribute("onclick","social_signup(event, 'github')"),g.innerHTML="Or signup with email",g.setAttribute("onclick","authOptions('moreOptions')"),d.innerHTML="Signup",d.setAttribute("onclick","signup(event)"),hideElementsById(["forgot-password","user-email-error"]),k.style="display: "+("none"==e.style.display?"flex":"none")+";")}
+function authOptions(a){hideElementsById(["user-email-error"]);var b={true:{visible:"email-container-id password-container-id reenter-password-container-id login-via-email-id forgot-password go-back-login".split(" "),hidden:["switch-to-email","social-auth-google","social-auth-github"]},false:{visible:["switch-to-email","social-auth-google","social-auth-github"],hidden:"email-container-id password-container-id reenter-password-container-id login-via-email-id forgot-password go-back-login".split(" ")}};showElementsById(b["moreOptions"==a].visible);hideElementsById(b["moreOptions"==a].hidden);document.getElementById("user-email").focus();"moreOptions"==a&&"Login"==document.getElementById("login-via-email-id").innerHTML&&hideElementsById(["reenter-password-container-id"])}
+function togglePaymentOption(a){var b=document.getElementById("stripeGoToggle"),c=document.getElementById("paypalGoToggle"),e=document.getElementById("stripeProToggle"),f=document.getElementById("paypalProToggle"),g=document.getElementById("outstripeGoToggle"),d=document.getElementById("outpaypalGoToggle");"stripeGo"==a?(b.classList.contains("active")||(b.classList.add("active"),c.classList.remove("active")),g.classList.contains("active")||(g.classList.add("active"),d.classList.remove("active")),document.getElementById("stripe-go-button-container").style.display="flex",document.getElementById("out-stripe-go-button-container").style.display="flex",document.getElementById("stripe-pro-button-container").style.display="none",document.getElementById("paypal-button-container").style.display="none",document.getElementById("paypal-button-container-out-of-credits").style.display="none"):"paypalGo"==a?(c.classList.contains("active")||(c.classList.add("active"),b.classList.remove("active")),d.classList.contains("active")||(d.classList.add("active"),g.classList.remove("active")),document.getElementById("stripe-go-button-container").style.display="none",document.getElementById("out-stripe-go-button-container").style.display="none",document.getElementById("paypal-button-container").style.display="flex",document.getElementById("paypal-button-container-sub-popup").style.display="none",document.getElementById("paypal-button-container-out-of-credits").style.display="flex"):"stripePro"==a?(e.classList.contains("active")||(e.classList.add("active"),f.classList.remove("active")),document.getElementById("stripe-pro-button-container").style.display="flex",document.getElementById("stripe-go-button-container").style.display="none",document.getElementById("paypal-button-container-sub-popup").style.display="none"):(f.classList.contains("active")||(f.classList.add("active"),e.classList.remove("active")),document.getElementById("stripe-pro-button-container").style.display="none",document.getElementById("paypal-button-container-sub-popup").style.display="flex",document.getElementById("paypal-button-container").style.display="none")}
+function toggleMembershipOption(a){var b={pro:{active:"proToggle",inactive:"payGoToggle",titleDisplay:"flex",subheaderText:"DeepAI PRO member",priceText:"$4.99",lengthText:"/month",periodText:"Per month",genCallsValue:"500",chatCallsValue:"1750",geniusMessagesValue:"60",geniusMessagesFontSize:"14px",geniusImagesValue:"60",geniusImagesFontSize:"14px"},payGo:{active:"payGoToggle",inactive:"proToggle",titleDisplay:"none",subheaderText:"Pay as you go member",priceText:"$5.00",lengthText:"/starting",periodText:"Per $5",genCallsValue:"100",chatCallsValue:"350",geniusMessagesValue:"-",geniusMessagesFontSize:"30px",geniusImagesValue:"-",geniusImagesFontSize:"30px"}}["pro"===a?"pro":"payGo"];document.getElementById(b.active).classList.add("active");document.getElementById(b.inactive).classList.remove("active");document.getElementById("subscription-title-pro-id").style.display=b.titleDisplay;document.getElementById("subscriptions-subheader-id").innerHTML=b.subheaderText;document.getElementById("subscription-price-id").innerHTML=b.priceText;document.getElementById("subscription-length-id").innerHTML=b.lengthText;document.getElementById("gen-calls-per").innerHTML=b.periodText;document.getElementById("gen-calls-value").innerHTML=b.genCallsValue;document.getElementById("chat-calls-value").innerHTML=b.chatCallsValue;document.getElementById("genius-messages-value").innerHTML=b.geniusMessagesValue;document.getElementById("genius-messages-value").style.fontSize=b.geniusMessagesFontSize;document.getElementById("genius-images-value").innerHTML=b.geniusImagesValue;document.getElementById("genius-images-value").style.fontSize=b.geniusImagesFontSize;try{updateUserPlanButton("pro"===a)}catch(c){console.log("error getting user to check the plan",c)}}function setDisplayStyle(a,b){a.forEach(function(c){if(c=document.getElementById(c))c.style.display=b})}
+function changePaymentModalState(a){var b=["paypal-button-container","paypal-button-container-sub-pricing","paypal-button-container-sub-popup"],c=["membership-toggle-id","modal-subscription-section-id","subscription-start-id","modal-dropdown-payment-amount"],e=["sub-terms-pro","payment-container-pro"],f=["sub-terms-go","payment-container-go"],g=document.getElementById("subscribe-to-id");"start"===a?(setDisplayStyle(b,"none"),setDisplayStyle(c,"none"),document.getElementById("get-started-container-id").style.display="flex","none"===document.getElementById("subscription-title-pro-id").style.display?(togglePaymentOption("stripeGo"),setDisplayStyle(e,"none"),setDisplayStyle(f,"flex"),document.getElementById("modal-dropdown-payment-amount").style.display="flex",g.innerHTML="Pay as you go using:"):(togglePaymentOption("stripePro"),setDisplayStyle(f,"none"),setDisplayStyle(e,"flex"),g.innerHTML="Subscribe to PRO using:")):(setDisplayStyle(b,"none"),setDisplayStyle(c,"flex"),document.getElementById("get-started-container-id").style.display="none")}
+function togglePricingPageOptions(a){var b=document.getElementById("freeMembToggle"),c=document.getElementById("proMembToggle"),e=document.getElementById("goMembToggle");"free-memb"==a?(b.classList.contains("active")||(b.classList.add("active"),c.classList.remove("active"),e.classList.remove("active")),document.getElementById("middle-free-plan-column").style.display="block",document.getElementById("middle-pro-plan-column").style.display="none",document.getElementById("middle-go-plan-column").style.display="none"):"pro-memb"==a?(c.classList.contains("active")||(c.classList.add("active"),b.classList.remove("active"),e.classList.remove("active")),document.getElementById("middle-free-plan-column").style.display="none",document.getElementById("middle-pro-plan-column").style.display="block",document.getElementById("middle-go-plan-column").style.display="none"):(e.classList.contains("active")||(e.classList.add("active"),b.classList.remove("active"),c.classList.remove("active")),document.getElementById("middle-free-plan-column").style.display="none",document.getElementById("middle-pro-plan-column").style.display="none",document.getElementById("middle-go-plan-column").style.display="block")}function toggleMembershipOptionPricing(a){var b=document.getElementById("mobileProToggle"),c=document.getElementById("mobilePayGoToggle");a="pro"===a;try{updateClasses(b,c,a),updateContent(a)}catch(e){console.log("error updating pricing classes",e)}try{updateUserPlanButton(a)}catch(e){console.log("error getting user to check the plan",e)}}
+function updateClasses(a,b,c){a.classList.toggle("active",c);b.classList.toggle("active",!c)}
+function updateContent(a){var b=a?getProPlan():getGoPlan();document.getElementById("mobile-subscription-title-pro-id").style.display=a?"flex":"none";document.getElementById("mobile-subscriptions-subheader-id").innerHTML=b.subHeader;document.getElementById("mobile-subscription-price-id").innerHTML=b.price;document.getElementById("mobile-subscription-length-id").innerHTML=b.length;document.getElementById("mobile-pro-overages").style.display=a?"flex":"none";document.getElementById("mobile-gen-calls-per").innerHTML=b.period;document.getElementById("mobile-gen-calls-value").innerHTML=b.genCalls;document.getElementById("mobile-chat-calls-value").innerHTML=b.chatCalls;a=document.getElementById("mobile-genius-messages-value");a.innerHTML=b.geniusMessages;a.style.fontSize=b.messageSize;a=document.getElementById("mobile-genius-images-value");a.innerHTML=b.geniusImages;a.style.fontSize=b.imageSize}
+function updateUserPlanButton(a){var b=null;localStorage.getItem("user")&&(b=JSON.parse(localStorage.getItem("user")));if(b&&b.userprofile2){var c=b.userprofile2.user_has_deepai_pro;b=b.userprofile2.user_is_pay_as_you_go;a=a?!c:!b;c=document.getElementById("subscription-start-id");b=document.getElementById("mobile-subscription-start-id");c&&(c.style=a?"background-color: #8f37ff; border: none; cursor: pointer; pointer-events: all;":"background-color: transparent; border: 2px solid #8f37ff; cursor: default; pointer-events: none;",c.innerHTML=a?"Get Started":"Current Plan");b&&(b.style=a?"background-color: #8f37ff; border: none; cursor: pointer; pointer-events: all;":"background-color: transparent; border: 2px solid #8f37ff; cursor: default; pointer-events: none;",b.innerHTML=a?"Get Started":"Current Plan")}}function getProPlan(){return{subHeader:"DeepAI PRO member",price:"$4.99",length:"/month",period:"Per month",genCalls:"500",chatCalls:"1750",geniusMessages:"60",messageSize:"14px",geniusImages:"60",imageSize:"14px"}}
+function getGoPlan(){return{subHeader:"Pay as you go member",price:"$5.00",length:"/starting",period:"Per $5",genCalls:"100",chatCalls:"350",geniusMessages:"-",messageSize:"30px",geniusImages:"-",imageSize:"30px"}}
+function changePaymentModalStatePricing(a){var b="mobile-membership-toggle-id modal-subscription-section-id mobile-subscription-section-id subscription-start-id mobile-subscription-start-id paypal-button-container paypal-button-container-b paypal-button-container-sub-pricing paypal-button-container-sub-popup".split(" "),c=["mobile-sub-terms-pro","mobile-payment-container-pro","mobile-stripe-pro-button-container"],e=["mobile-sub-terms-go","mobile-payment-container-go","mobile-stripe-go-button-container"],f=document.getElementById("mobile-subscribe-to-id");"start"===a?(setDisplayStyle(b,"none"),setDisplayStyle(["get-started-container-id","mobile-get-started-container-id"],"flex"),"none"===document.getElementById("mobile-subscription-title-pro-id").style.display?(togglePaymentOption("stripeGo"),setDisplayStyle(c,"none"),setDisplayStyle(e,"flex"),f.innerHTML="Pay as you go using:",document.getElementById("mobile-dropdown-payment-amount").style.display="flex"):(togglePaymentOption("stripePro"),setDisplayStyle(e,"none"),setDisplayStyle(c,"flex"),f.innerHTML="Subscribe to PRO using:",document.getElementById("mobile-dropdown-payment-amount").style.display="none")):(setDisplayStyle(b,"flex"),setDisplayStyle(["get-started-container-id","mobile-get-started-container-id"],"none"),setDisplayStyle(["modal-dropdown-payment-amount","go-dropdown-payment-amount"],"none"))}
+function togglePaymentOptionMobile(a){var b=document.getElementById("mobilestripeGoToggle"),c=document.getElementById("mobilepaypalGoToggle"),e=document.getElementById("mobilestripeProToggle"),f=document.getElementById("mobilepaypalProToggle");"stripeGo"==a?(b.classList.contains("active")||(b.classList.add("active"),c.classList.remove("active")),document.getElementById("mobile-stripe-go-button-container").style.display="flex",document.getElementById("mobile-stripe-pro-button-container").style.display="none",document.getElementById("paypal-button-container-b").style.display="none"):"paypalGo"==a?(c.classList.contains("active")||(c.classList.add("active"),b.classList.remove("active")),document.getElementById("mobile-stripe-go-button-container").style.display="none",document.getElementById("paypal-button-container-b").style.display="flex",document.getElementById("paypal-button-container-sub-pricing").style.display="none"):("stripePro"==a?(e.classList.contains("active")||(e.classList.add("active"),f.classList.remove("active")),document.getElementById("mobile-stripe-pro-button-container").style.display="flex",document.getElementById("mobile-stripe-go-button-container").style.display="none",document.getElementById("paypal-button-container-sub-pricing").style.display="none"):(f.classList.contains("active")||(f.classList.add("active"),e.classList.remove("active")),document.getElementById("mobile-stripe-pro-button-container").style.display="none",document.getElementById("paypal-button-container-sub-pricing").style.display="flex"),document.getElementById("paypal-button-container-b").style.display="none")}
+function checkCurrentUserPricingPlan(a){a=void 0===a?"default":a;var b="default"===a?"pro-plan-button":"middle-pro-plan-button",c="default"===a?"free-plan-column":"middle-free-plan-column",e="default"===a?"go-plan-button":"middle-go-plan-button",f="default"===a?"free-plan-button":"middle-free-plan-button",g=null;localStorage.getItem("user")&&(g=JSON.parse(localStorage.getItem("user")));g&&g.userprofile2&&(g.userprofile2.user_has_deepai_pro?(document.getElementById(b)&&(setElementStyles(b,"Current Plan",!0),c&&(document.getElementById(c).style="display: none;"),document.getElementById("info-subscriptions-container").style="width: 22vw;",setElementOnClick(e,"openSubscription('go');"),"default"===a&&(setElementStyles("subscription-start-id","Current Plan",!0),setElementStyles("mobile-subscription-start-id","Current Plan",!0))),toggleMembershipOptionPricing("pro"),setElementOnClick("subscription-start-id","changePaymentModalState('start');"),setElementOnClick("mobile-subscription-start-id","changePaymentModalStatePricing('start');"),document.getElementById("freeMembToggle").style="display: none;"):g.userprofile2.user_is_pay_as_you_go?(document.getElementById(e)&&(setElementStyles(e,"Current Plan",!0),c&&(document.getElementById(c).style="display: none;"),document.getElementById("info-subscriptions-container").style="width: 24vw;","default"===a&&(setElementStyles("subscription-start-id","Current Plan",!0),setElementStyles("mobile-subscription-start-id","Current Plan",!0))),toggleMembershipOptionPricing("go"),setElementOnClick("subscription-start-id","changePaymentModalState('start');"),setElementOnClick("mobile-subscription-start-id","changePaymentModalStatePricing('start');"),document.getElementById("freeMembToggle").style="display: none;"):userIsLoggedIn()&&(setElementOnClick("subscription-start-id","changePaymentModalState('start');"),setElementOnClick("mobile-subscription-start-id","changePaymentModalStatePricing('start');"),document.getElementById(f)&&(setElementStyles(f,"Current Plan",!0),setElementOnClick(e,"openSubscription('go');"),"default"===a?setElementOnClick("pro-plan-button","openSubscription();"):setElementOnClick("middle-pro-plan-button","openSubscription();"))))}function setElementStyles(a,b,c){c=void 0===c?!1:c;if(a=document.getElementById(a))a.style=c?"background-color: transparent; border: 2px solid #8f37ff; cursor: default; pointer-events: none;":"background-color: #8f37ff; border: none; cursor: pointer; pointer-events: all;",a.innerHTML=b}
+function setElementOnClick(a,b){(a=document.getElementById(a))&&a.setAttribute("onClick",b)}function updateNonLoggedInUserPlan(){setElementOnClick("subscription-start-id","openSignup();");setElementStyles("subscription-start-id","Signup");setElementOnClick("mobile-subscription-start-id","openSignup();");setElementStyles("mobile-subscription-start-id","Signup")}
+function subscriptionPopupAfterAuth(){var a=null;localStorage.getItem("user")&&(a=JSON.parse(localStorage.getItem("user")));var b=document.getElementById("subscription-start-id").innerHTML;a&&a.userprofile2&&(a.userprofile2.user_has_deepai_pro||a.userprofile2.user_is_pay_as_you_go||"Signup"==b&&openSubscription())}function openSubscribeFromGenius(a){if(a=document.getElementById("image"===a?"genius-images-modal":"genius-chat-modal"))a.close(),openSubscription()}
+try{document.addEventListener("visibilitychange",function(a){fetch(app_base_url+"/favicon.ico",{method:"POST",credentials:"include"})})}catch(a){console.log("error adding visibilitychange event listener: "+a)}function removeHeaderBackground(){document.querySelector("header").style.background=""}
+function changeHeaderBackground(){var a=document.querySelector("header"),b=document.getElementById("deepai.org_header"),c=a.getBoundingClientRect();b=b.getBoundingClientRect();var e=c.height;c=document.querySelector("body").getBoundingClientRect().height/e;b=-100*b.height/e;a.style.background="linear-gradient(180deg,#7729aa "+(b+-13.13*c)+"%,#170a2d "+(b+.17*c)+"%,#0a061d "+(b+6.9*c)+"%,rgba(10,6,30,0.99) "+(b+36.38*c)+"%,#010311 "+(b+98.59*c)+"%)"}
+try{user_paid_for_no_ads||changeHeaderBackground()}catch(a){console.log("error changing header background: "+a)}try{localStorage.setItem("name","Hello World!")}catch(a){console.log("Error - local storage is full. clearing local storage");try{localStorage.clear()}catch(b){console.log("error clearing local storage: "+b)}}var onCategoryPage=!1,reeferrerMadness=document.referrer,cookieUserReeferrer=localStorage.getItem("userReeferrer");void 0==cookieUserReeferrer&&(localStorage.setItem("userReeferrer",reeferrerMadness),cookieUserReeferrer=localStorage.getItem("userReeferrer"));var thisLocation=window.location.pathname,pagePathCookie=localStorage.getItem("pagePath");if(void 0==pagePathCookie)localStorage.setItem("pagePath",[thisLocation]);else if(!(1E5<pagePathCookie.length)){var newPagePathCookie=[pagePathCookie,thisLocation];localStorage.setItem("pagePath",newPagePathCookie)}var latestPagePathCookie=localStorage.getItem("pagePath");console.log(latestPagePathCookie);console.log(cookieUserReeferrer);if(document.createElement("dialog").showModal)console.log("not loading dialog polyfill");else{console.log("loading dialog polyfill...");var script=document.createElement("script");script.src="/static/js/libs/dialog-polyfill.js";script.type="text/javascript";script.async=!0;script.onload=function(){for(var a=$jscomp.makeIterator(document.getElementsByTagName("dialog")),b=a.next();!b.done;b=a.next())dialogPolyfill.registerDialog(b.value)};document.getElementsByTagName("head")[0].appendChild(script)}
+window.localStorage&&window.sessionStorage||function(){var a=function(b){function c(d,h,k){if(k){var l=new Date;l.setTime(l.getTime()+864E5*k);k="; expires="+l.toGMTString()}else k="";document.cookie=d+"="+h+k+"; path=/"}function e(d){d=JSON.stringify(d);"session"==b?window.name=d:c("localStorage",d,365)}function f(){var d=0,h;for(h in g)g.hasOwnProperty(h)&&(d+=1);return d}var g=function(){if("session"==b)var d=window.name;else a:{d=document.cookie.split(";");var h,k;for(h=0;h<d.length;h++){for(k=d[h];" "==k.charAt(0);)k=k.substring(1,k.length);if(0==k.indexOf("localStorage=")){d=k.substring(13,k.length);break a}}d=null}return d?JSON.parse(d):{}}();return{clear:function(){g={};"session"==b?window.name="":c("localStorage","",365);this.length=f()},getItem:function(d){d=encodeURIComponent(d);return void 0===g[d]?null:g[d]},key:function(d){var h=0,k;for(k in g){if(h==d)return decodeURIComponent(k);h++}return null},removeItem:function(d){d=encodeURIComponent(d);delete g[d];e(g);this.length=f()},setItem:function(d,h){d=encodeURIComponent(d);g[d]=String(h);e(g);this.length=f()},length:0}};window.localStorage||(window.localStorage=new a("local"));window.sessionStorage||(window.sessionStorage=new a("session"))}();var user_object={};function userIsLoggedIn(){return user_object.pk?!0:!1}
+function saveDeepaiProLinkUrl(){var a,b;return $jscomp.asyncExecutePromiseGeneratorProgram(function(c){if(1==c.nextAddress)return c.yield(fetch(app_base_url+"/get_my_stripe_subscription_checkout_link",{method:"GET",credentials:"include"}),2);if(3!=c.nextAddress)return a=c.yieldResult,c.yield(a.json(),3);b=c.yieldResult;window.deepaiProLinkUrl=b.link;console.log("got deepaiProLinkUrl",window.deepaiProLinkUrl);window.deepaiAddCreditsLinkUrl=b.add_credits_link;console.log("got deepaiAddCreditsLinkUrl",window.deepaiAddCreditsLinkUrl);c.jumpToEnd()})}function authKeyPressHandler(a){13!=a.keyCode||a.shiftKey||(a.preventDefault(),"Login"==document.getElementById("login-via-email-id").innerHTML?login(a):signup(a))}
+function checkAuthStatus(){var a,b,c,e,f,g,d,h,k,l,m,n,p,q;return $jscomp.asyncExecutePromiseGeneratorProgram(function(t){localStorage.getItem("user")&&(user_object=JSON.parse(localStorage.getItem("user")));if("function"===typeof displayMyChatSessions)try{displayMyChatSessions()}catch(u){console.log(u)}console.log(user_object);a=document.getElementById("sandwichIconDrop");b=document.getElementById("userIconDrop");c=document.getElementById("navProfileSection");e=document.getElementById("navProfileButton");f=document.getElementById("navUserAvatar");g=document.getElementById("headerLoginButton");d=document.getElementById("navUserName");h=document.getElementById("navUserEmail");if(!userIsLoggedIn())return t.jumpTo(0);unlockOnlineMode();user_object.userprofile2.user_can_use_genius_mode&&(unlockGeniusMode(),unlockGeniusImageGenerator());if(!1===user_object.userprofile2.locked_out_due_to_no_payment_info){unlockAllStyleButtons();unlockHdImageGenerator();try{hideFreestarAds()}catch(u){console.log("error hiding ads after login",u)}}f.src=app_base_url+"/get_author_obj_img_url";saveDeepaiProLinkUrl();a.style="display: none;";g.style="display: none;";b.style="display: flex;";c.style="display: flex;";e.style="display: flex;";d.innerHTML=user_object.username;h.innerHTML=user_object.email;k=$jscomp.makeIterator(document.getElementsByClassName("button login"));for(l=k.next();!l.done;l=k.next())m=l.value,m.setAttribute("onclick","window.location.replace('/dashboard/profile')"),m.innerHTML="My Profile";document.getElementById("signup-button-dropdown-li")&&(document.getElementById("signup-button-dropdown-li").setAttribute("onclick","window.location.replace('/dashboard/profile')"),document.getElementById("signup-button-dropdown-li").innerHTML="My Profile");n=$jscomp.makeIterator(document.getElementsByClassName("login-button"));for(p=n.next();!p.done;p=n.next())q=p.value,q.setAttribute("onclick","logout()"),q.innerHTML="Log Out";document.getElementById("login-button-dropdown")&&(document.getElementById("login-button-dropdown").setAttribute("onclick","logout()"),document.getElementById("login-button-dropdown").style="padding: 0px;",document.getElementById("login-button-dropdown").innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"> <path d="M15.75 9V5.25C15.75 4.65326 15.5129 4.08097 15.091 3.65901C14.669 3.23705 14.0967 3 13.5 3H7.5C6.90326 3 6.33097 3.23705 5.90901 3.65901C5.48705 4.08097 5.25 4.65326 5.25 5.25V18.75C5.25 19.3467 5.48705 19.919 5.90901 20.341C6.33097 20.7629 6.90326 21 7.5 21H13.5C14.0967 21 14.669 20.7629 15.091 20.341C15.5129 19.919 15.75 19.3467 15.75 18.75V15" stroke="white" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/> <path d="M18.75 15L21.75 12M21.75 12L18.75 9M21.75 12L9 12" stroke="white" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/> </svg>Logout');user_object.userprofile&&user_object.userprofile.api_key?applyApiKeyToCodeExamples(user_object.userprofile.api_key):console.log("Error - user is logged in but has no API key.");try{"object"==typeof freestar&&freestar.queue.push(function(){freestar.identity.setIdentity({email:user_object.email})})}catch(u){console.log("error setting freestar identity",u)}applyCachedHeartsToHeartsOnPage();return t.yield(refreshHeartsFromServer(),0)})}
+function unlockAllStyleButtons(){document.getElementById("selectedModelPaidOnly")&&document.getElementById("selectedModelPaidOnly").setAttribute("locked","False")}function unlockGeniusMode(){document.getElementById("genius")&&document.getElementById("genius").removeAttribute("locked")}function unlockOnlineMode(){document.getElementById("online")&&document.getElementById("online").removeAttribute("locked")}
+function unlockHdImageGenerator(){document.getElementById("modelHdButton")&&document.getElementById("modelHdButton").removeAttribute("locked");document.getElementById("imageHdLockedIcon")&&document.getElementById("imageHdLockedIcon").remove()}
+function hideFreestarAds(){if("object"===typeof freestar&&freestar.config&&freestar.config.alwaysRefresh)try{freestar.config.alwaysRefresh.map(function(a){return document.getElementById(a)}).filter(Boolean).map(function(a){return a.closest("body > *").remove()})}catch(a){console.log("error removing ads for logged in user",a)}}
+function unlockGeniusImageGenerator(){document.getElementById("modelGeniusModeButton")&&document.getElementById("modelGeniusModeButton").removeAttribute("locked");document.getElementById("imageGeniusLockedIcon")&&document.getElementById("imageGeniusLockedIcon").remove()}
+function auth(){var a,b,c;return $jscomp.asyncExecutePromiseGeneratorProgram(function(e){switch(e.nextAddress){case 1:return e.yield(fetch(app_base_url+"/daily-time-sync/user/",{credentials:"include"}),2);case 2:return a=e.yieldResult,e.yield(a.json(),3);case 3:return b=e.yieldResult,c=JSON.stringify(b),e.yield(a.status,4);case 4:if(200==e.yieldResult)return localStorage.setItem("user",c),user_object=JSON.parse(localStorage.getItem("user")),e.yield(checkAuthStatus(),6);localStorage.setItem("user",c);return e.yield(checkAuthStatus(),6);case 6:e.jumpToEnd()}})}function mainNavDrop(){document.getElementById("mainNavDropdown").classList.toggle("show-dropdown")}document.getElementById("dropMenuButton")&&document.getElementById("dropMenuButton").addEventListener("click",function(a){a.stopPropagation();mainNavDrop()},!1);window.onclick=function(a){a.target.closest(".dropdown-link")||a.target.closest(".content-dropdown-link")||a.target.matches(".dropbtn")||(document.getElementById("contentNavDropdown")&&(a=document.getElementById("contentNavDropdown"))&&a.classList.contains("show-dropdown")&&a.classList.remove("show-dropdown"),(a=document.getElementById("mainNavDropdown"))&&a.classList.contains("show-dropdown")&&a.classList.remove("show-dropdown"))};var lastApiKeyUsed;function applyApiKeyToCodeExamples(a){for(var b=$jscomp.makeIterator(document.getElementsByClassName("api-key-auto-substitute-area")),c=b.next();!c.done;c=b.next())for(c=document.createTreeWalker(c.value);c.nextNode();){var e=c.currentNode;if(e.nodeValue){var f=e.nodeValue.replace("YOUR_API_KEY",a);lastApiKeyUsed&&(f=f.replace(lastApiKeyUsed,a));e.nodeValue=f}}lastApiKeyUsed=a}checkAuthStatus();auth();function refreshHeartsFromServer(){var a,b;return $jscomp.asyncExecutePromiseGeneratorProgram(function(c){if(1==c.nextAddress)return c.yield(fetch(app_base_url+"/get_my_hearted_object_ids",{credentials:"include"}),2);if(3!=c.nextAddress)return a=c.yieldResult,c.yield(a.json(),3);b=c.yieldResult;localStorage.setItem("hearts-cache",JSON.stringify(b));applyCachedHeartsToHeartsOnPage();c.jumpToEnd()})}
+function applyCachedHeartsToHeartsOnPage(){if(localStorage.getItem("hearts-cache"))for(var a=JSON.parse(localStorage.getItem("hearts-cache")).hearts,b=$jscomp.makeIterator(document.getElementsByClassName("heart-link")),c=b.next();!c.done;c=b.next())c=c.value,c.removeAttribute("hearted"),a[c.attributes.heartid.value]&&c.setAttribute("hearted","hearted");else console.log("no heart cache")}
+function heart(a){var b,c,e,f,g,d,h,k,l;return $jscomp.asyncExecutePromiseGeneratorProgram(function(m){if(1==m.nextAddress){if(!userIsLoggedIn())return openSignup(function(){heart(a)}),m.return();localStorage.getItem("hearts-cache")?b=JSON.parse(localStorage.getItem("hearts-cache")):(console.log("warning, hearts cache is empty. creating new hearts cache..."),b={hearts:{}});e=1*a.getElementsByClassName("heart-count")[0].innerText;a.attributes.hearted?(a.removeAttribute("hearted"),c="false",delete b.hearts[a.attributes.heartid.value],f=e-1,0>f&&(f=0),a.getElementsByClassName("heart-count")[0].innerText=f):(a.setAttribute("hearted","hearted"),c="true",b.hearts[a.attributes.heartid.value]=!0,a.getElementsByClassName("heart-count")[0].innerText=e+1);localStorage.setItem("hearts-cache",JSON.stringify(b));g=new FormData;d=a.attributes.heartid.value.split("-");h=d[0];k=d[1];g.append("type",h);g.append("id",k);g.append("switch",c);return m.yield(fetch(app_base_url+"/add_remove_heart",{method:"POST",credentials:"include",body:g}),2)}l=m.yieldResult;console.log("hearty response ",l);m.jumpToEnd()})}var modal=document.getElementById("login-modal"),afterSignupFunction=null,openSignup=function(a,b){afterSignupFunction=a;userIsLoggedIn()?afterSignupFunction&&afterSignupFunction():(subscription_modal.close(),modal.showModal(),toggleAuthOption("signup"),b&&(modal.getElementsByClassName("login-header")[0].innerHTML=b))},close=document.getElementById("close");close.addEventListener("click",function(){modal.close("cancelled");authOptions("lessOptions")});modal.addEventListener("cancel",function(){modal.close("cancelled");authOptions("lessOptions")});modal.addEventListener("click",function(a){a.target===modal&&(modal.close("cancelled"),authOptions("lessOptions"))});function getSignupCustomData(a){return{referrer:"["+cookieUserReeferrer+"]["+latestPagePathCookie+"]",signup_page:window.location.pathname,desired_username:a}}
+function save_custom_signup_data(a){var b,c;return $jscomp.asyncExecutePromiseGeneratorProgram(function(e){if(1==e.nextAddress)return b=getSignupCustomData(a),e.yield(fetch(app_base_url+"/save_custom_signup_data",{credentials:"include",method:"POST",body:JSON.stringify(b),headers:{"Content-Type":"application/json"}}),2);c=e.yieldResult;if(!c.ok)throw Error("saving custom signup data HTTP status "+c.status);return e.return(null)})}
+function signup(a){var b,c,e,f,g,d,h,k,l,m,n,p,q,t,u,w,v,A,x,y;return $jscomp.asyncExecutePromiseGeneratorProgram(function(r){switch(r.nextAddress){case 1:return a.preventDefault(),b=document.getElementById("user-email-error"),b.innerHTML="",b.setAttribute("style","display: none;"),c=document.getElementById("user-email"),e=document.getElementById("user-password"),f=document.getElementById("confirm-user-password"),g=c.value,d=e.value,h=f.value,k=new FormData,k.append("email",g),k.append("username",g),k.append("password1",d),k.append("password2",h),c.classList.add("loading"),l=null,g?e?f||(l="Password confirmation is required"):l="Password is required":l="Email is required",l?(b.innerHTML=l,b.setAttribute("style","display: block;"),c.classList.remove("loading"),r.return()):r.yield(get_user_login_type(g),3);case 3:m=r.yieldResult;if(m.user_exists){c.classList.remove("loading");n="This account already exists";m.login_with_password||(p=m.login_with_social_accounts[0],n="This account exists and needs to be logged in using "+
+p);b=document.getElementById("user-email-error");b.innerHTML=n;b.setAttribute("className","bad-auth-error");b.setAttribute("style","display: flex;");r.jumpTo(0);break}return r.yield(save_custom_signup_data(null),5);case 5:return r.yield(fetch(app_base_url+"/daily-time-sync/registration/",{credentials:"include",method:"POST",body:k}),6);case 6:q=r.yieldResult;console.log(q);if(1==q.ok)return c.classList.remove("loading"),modal.close("cancelled"),afterSignupFunction?r.yield(auth(),16):r.yield(auth(),15);if(0!=q.ok){r.jumpTo(0);break}c.classList.remove("loading");if(500==q.status){t="Hmm, something went wrong. Perhaps try another email address, or try again later.";b=document.getElementById("user-email-error");b.innerHTML=t;b.setAttribute("className","bad-auth-error");b.setAttribute("style","display: flex;");r.jumpTo(0);break}if(!(400<=q.status)){r.jumpTo(0);break}return r.yield(q.json(),12);case 12:u=r.yieldResult;t="Hmm, something went wrong. Perhaps try another email address, or try again later.";w=$jscomp.makeIterator(Object.entries(u));for(v=w.next();!v.done;v=w.next())if(A=v.value,x=$jscomp.makeIterator(A),x.next(),y=x.next().value,y[0]){t=y[0];break}b=document.getElementById("user-email-error");b.innerHTML=t;b.setAttribute("className","bad-auth-error");b.setAttribute("style","display: flex;");r.jumpTo(0);break;case 15:try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(z){console.log("error getting current user pricing plan: "+z)}r.jumpTo(0);break;case 16:afterSignupFunction();try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(z){console.log("error getting current user pricing plan: "+z)}r.jumpToEnd()}})}function changePaySub(){var a=document.getElementById("subscription-pro-id"),b=document.getElementById("payasyougo-id");"flex"===a.style.display?(a.style.display="none",b.style.display="flex"):(a.style.display="flex",b.style.display="none")}
+var login_modal=document.getElementById("login-modal"),afterLoginFunction=null,openLogin=function(a){afterLoginFunction=a;userIsLoggedIn()?afterLoginFunction&&afterLoginFunction():(login_modal.showModal(),toggleAuthOption("login"))},closeLogin=document.getElementById("close-login");closeLogin.addEventListener("click",function(){login_modal.close("cancelled");authOptions("lessOptions")});login_modal.addEventListener("cancel",function(){login_modal.close("cancelled");authOptions("lessOptions")});login_modal.addEventListener("click",function(a){a.target===login_modal&&(login_modal.close("cancelled"),authOptions("lessOptions"))});var subscription_modal=document.getElementById("subscription-modal");afterLoginFunction=null;var openSubscription=function(a){localStorage.getItem("user")&&(user_object=JSON.parse(localStorage.getItem("user")));userIsLoggedIn()||updateNonLoggedInUserPlan();"go"==a?(subscription_modal.showModal(),changePaymentModalState("back"),toggleMembershipOption("go")):(subscription_modal.showModal(),changePaymentModalState("back"),toggleMembershipOption("pro"));window.addEventListener("message",function(){console.log("received message:  ",event.data);"stripe subscription success"==event.data&&subscription_modal.close("cancelled")},!1)},closeSubscription=document.getElementById("close-sub");closeSubscription.addEventListener("click",function(){subscription_modal.close("cancelled")});subscription_modal.addEventListener("cancel",function(){subscription_modal.close("cancelled")});subscription_modal.addEventListener("click",function(a){a.target===subscription_modal&&subscription_modal.close("cancelled")});var out_of_credits_modal=document.getElementById("out-of-credits-modal"),openOutOfCredits=function(a){userIsLoggedIn()?(out_of_credits_modal.showModal(),null!==a&&void 0!==a&&(a=a.toFixed(2),document.getElementById("currentAccountBalance").innerText=a)):openLogin()},closeOutOfCredits=document.getElementById("close-out-of-credits");closeOutOfCredits.addEventListener("click",function(){out_of_credits_modal.close("cancelled")});out_of_credits_modal.addEventListener("cancel",function(){out_of_credits_modal.close("cancelled")});out_of_credits_modal.addEventListener("click",function(a){a.target===out_of_credits_modal&&out_of_credits_modal.close("cancelled")});function get_user_login_type(a){var b,c,e;return $jscomp.asyncExecutePromiseGeneratorProgram(function(f){switch(f.nextAddress){case 1:return b=new FormData,b.append("email",a),f.yield(fetch(app_base_url+"/get_user_login_type",{credentials:"include",method:"POST",body:b}),2);case 2:c=f.yieldResult;if(1!=c.ok){f.jumpTo(3);break}return f.yield(c.json(),4);case 4:return e=f.yieldResult,f.return(e);case 3:return f.return(null)}})}
+function login(a){var b,c,e,f,g,d,h,k,l,m;return $jscomp.asyncExecutePromiseGeneratorProgram(function(n){switch(n.nextAddress){case 1:a.preventDefault();b=document.getElementById("user-email-error");b.innerHTML="";b.setAttribute("style","display: none;");c=document.getElementById("user-email");e=document.getElementById("user-password");f=c.value;g=e.value;d=new FormData;d.append("username",f);d.append("password",g);if(""==f||""==e){n.jumpTo(0);break}c.classList.add("loading");return n.yield(get_user_login_type(f),3);case 3:return h=n.yieldResult,h.user_exists?h.login_with_password?n.yield(fetch(app_base_url+"/daily-time-sync/login/",{credentials:"include",method:"POST",body:d}),4):(c.classList.remove("loading"),l=h.login_with_social_accounts[0],k="This account needs to be logged in using "+l,b=document.getElementById("user-email-error"),b.innerHTML=k,b.setAttribute("className","bad-auth-error"),b.setAttribute("style","display: flex;"),n.return()):(c.classList.remove("loading"),k="No user with this email or username was found",b=document.getElementById("user-email-error"),b.innerHTML=k,b.setAttribute("className","bad-auth-error"),b.setAttribute("style","display: flex;"),n.return());case 4:m=n.yieldResult;console.log(m);if(1!=m.ok){0==m.ok&&(c.classList.remove("loading"),500==m.status?(k="Hmm, something went wrong. Let's try that again.",b=document.getElementById("user-email-error"),b.innerHTML=k,b.setAttribute("className","bad-auth-error"),b.setAttribute("style","display: flex;")):400==m.status&&(k="Email/password combination incorrect. Let's try that again.",b=document.getElementById("user-email-error"),b.innerHTML=k,b.setAttribute("className","bad-auth-error"),b.setAttribute("style","display: flex;")));n.jumpTo(0);break}c.classList.remove("loading");login_modal.close("cancelled");return afterLoginFunction?n.yield(auth(),9):n.yield(auth(),8);case 8:try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(p){console.log("error getting current user pricing plan: "+p)}n.jumpTo(0);break;case 9:afterLoginFunction();try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(p){console.log("error getting current user pricing plan: "+p)}n.jumpToEnd()}})}function sleep_async(a){return new Promise(function(b){return setTimeout(b,a)})}
+function social_auth(a,b){var c,e,f;return $jscomp.asyncExecutePromiseGeneratorProgram(function(g){switch(g.nextAddress){case 1:return c={linkedin:"/accounts/linkedin_oauth2/login/?process=login",google:"/accounts/google/login/?process=login",github:"/accounts/github/login/?process=login"},e=app_base_url+c[a],f=window.open("about:blank","deepaiLogin","height=600,width=600,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=no,menubar=no,location=no,directories=no,status=no"),g.yield(save_custom_signup_data(b),2);case 2:f.location.href=e;case 3:return g.yield(sleep_async(200),5);case 5:if(f.closed)return g.return();g.jumpTo(3)}})}
+function social_signup(a,b){var c,e,f;return $jscomp.asyncExecutePromiseGeneratorProgram(function(g){switch(g.nextAddress){case 1:return a.preventDefault(),c=document.getElementById("user-email"),c.classList.add("loading"),e=document.getElementById("user-email-error"),e.innerHTML="",e.setAttribute("style","display: none;"),g.yield(social_auth(b,null),2);case 2:return g.yield(fetch(app_base_url+"/daily-time-sync/user/",{credentials:"include"}),3);case 3:f=g.yieldResult;if(1!=f.ok){c.classList.remove("loading");e.innerHTML="Hmm, something went wrong. You might already have an account with that email, or your passwords do not match.";e.setAttribute("className","bad-auth-error");e.setAttribute("style","display: flex;");g.jumpTo(0);break}c.classList.remove("loading");modal.close("cancelled");return afterSignupFunction?g.yield(auth(),8):g.yield(auth(),7);case 7:try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(d){console.log("error getting current user pricing plan: "+
+d)}g.jumpTo(0);break;case 8:afterSignupFunction();try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(d){console.log("error getting current user pricing plan: "+d)}g.jumpToEnd()}})}
+function social_login(a,b){var c,e,f;return $jscomp.asyncExecutePromiseGeneratorProgram(function(g){switch(g.nextAddress){case 1:return a.preventDefault(),g.yield(social_auth(b,null),2);case 2:return c=document.getElementById("user-email"),c.classList.add("loading"),g.yield(fetch(app_base_url+"/daily-time-sync/user/",{credentials:"include"}),3);case 3:e=g.yieldResult;if(1!=e.ok){c.classList.remove("loading");f=document.getElementById("user-email-error");f.innerHTML="Hmm, something went wrong. Let's try that again.";f.setAttribute("className","bad-auth-error");f.setAttribute("style","display: flex;");g.jumpTo(0);break}c.classList.remove("loading");login_modal.close("cancelled");return g.yield(auth(),5);case 5:try{subscriptionPopupAfterAuth(),checkCurrentUserPricingPlan(),checkCurrentUserPricingPlan("middle")}catch(d){console.log("error getting current user pricing plan: "+d)}g.jumpToEnd()}})}
+function logout(){return $jscomp.asyncExecutePromiseGeneratorProgram(function(a){if(1==a.nextAddress)return a.yield(fetch(app_base_url+"/daily-time-sync/logout/",{method:"POST",credentials:"include"}),2);localStorage.removeItem("user");localStorage.removeItem("hearts-cache");user_object={};window.location="/";a.jumpToEnd()})}
+function resetPassword(a){var b,c,e,f;return $jscomp.asyncExecutePromiseGeneratorProgram(function(g){if(1==g.nextAddress)return b=document.getElementById("user-email-error"),b.innerHTML="",b.setAttribute("style","display: none;"),login_user_email=document.getElementById("user-email"),login_user_email_value=login_user_email.value,c=new FormData,c.append("email",login_user_email_value),g.yield(fetch(app_base_url+"/password_reset_trigger",{method:"POST",credentials:"include",body:c}),2);e=g.yieldResult;console.log(e);1==e.ok?(f="Check your email inbox to reset password.",b=document.getElementById("user-email-error"),console.log(b),b.innerHTML=f,b.setAttribute("class","good-auth-error"),b.setAttribute("style","display: flex;")):0==e.ok&&(f=document.getElementById("user-email").value?"Hmm something isn't right. Please try again or contact us.":"Please enter your email address above.",b=document.getElementById("user-email-error"),b.innerHTML=f,b.setAttribute("class","bad-auth-error"),b.setAttribute("style","display: flex;"));g.jumpToEnd()})}
+var thisPagePath=window.location.pathname,social_modal=document.getElementById("social-modal"),openSocial=function(a,b,c){social_modal.showModal();document.getElementById("share_title").innerHTML=b;document.getElementById("social-image").setAttribute("style","background-image: url('"+c+"')");document.getElementById("fb-link").href="https://www.facebook.com/sharer.php?u="+a;document.getElementById("tw-link").href="https://twitter.com/intent/tweet?url="+a;document.getElementById("lkdin-link").href="https://www.linkedin.com/shareArticle?mini=true&url="+
+a},closeSocial=document.getElementById("close-social");closeSocial.addEventListener("click",function(){social_modal.close("cancelled")});social_modal.addEventListener("cancel",function(){social_modal.close("cancelled")});social_modal.addEventListener("click",function(a){a.target===social_modal&&social_modal.close("cancelled")});function fragmentFromString(a){return document.createRange().createContextualFragment(a)}
+function load_paypal_subscriptions(){var a=document.createElement("script");a.src="https://www.paypal.com/sdk/js?client-id=AYo4E41BoY_tpXUXuZ-5rclkCZATIojkd25Aym1lY7PBVTltF5NRLSmMK8bFWPnyL9iB5wLyaIW9kV-O&vault=true&intent=subscription";a.setAttribute("data-sdk-integration-source","button-factory");a.setAttribute("data-namespace","paypal_subscriptions");a.async=!0;a.onload=function(){"undefined"===typeof paypal_subscriptions?console.error("PayPal SDK not loaded properly."):paypal_subscriptions.Buttons({fundingSource:paypal_subscriptions.FUNDING.PAYPAL,style:{shape:"rect",color:"silver",layout:"vertical",label:"subscribe",height:48},createSubscription:function(b,c){return c.subscription.create({plan_id:"P-9LT69365YG9885149MPMFULA"})},onApprove:function(b,c){var e,f,g;return $jscomp.asyncExecutePromiseGeneratorProgram(function(d){if(1==d.nextAddress)return e=b.subscriptionID,f=document.getElementById("paypal-button-container-P-9LT69365YG9885149MPMFULA"),f.innerHTML="<h3>Thank you for subscribing!</h3>",g=new FormData,g.append("subID",e),d.yield(fetch(app_base_url+"/save_paypal_subscription",{method:"POST",credentials:"include",body:g}),2);"undefined"!==typeof subscription_modal&&subscription_modal.close("cancelled");d.jumpToEnd()})}}).render("#paypal-button-container-P-9LT69365YG9885149MPMFULA")};document.head.appendChild(a)}
+function load_paypal_out_of_credits(){var a=document.createElement("script");a.src="https://www.paypal.com/sdk/js?currency=USD&client-id=AYo4E41BoY_tpXUXuZ-5rclkCZATIojkd25Aym1lY7PBVTltF5NRLSmMK8bFWPnyL9iB5wLyaIW9kV-O";a.setAttribute("data-namespace","paypal_out_of_credits");a.async=!0;a.onload=function(){paypal_out_of_credits.Buttons({fundingSource:paypal_out_of_credits.FUNDING.PAYPAL,style:{shape:"rect",color:"silver",height:46},createOrder:function(b,c){return c.order.create({purchase_units:[{amount:{value:document.getElementById("outOfCreditsAmountSelect").value}}],application_context:{shipping_preference:"NO_SHIPPING"}})},onApprove:function(b,c){return c.order.capture().then(function(e){var f,g;return $jscomp.asyncExecutePromiseGeneratorProgram(function(d){if(1==d.nextAddress)return console.log("Capture result",e,JSON.stringify(e,null,2)),f=document.getElementById("paypal-button-container-out-of-credits"),f.innerHTML="<h3>Thank you for your payment!</h3>",g=new FormData,g.append("capture_id",e.purchase_units[0].payments.captures[0].id),d.yield(fetch(app_base_url+"/save_paypal_payment",{method:"POST",credentials:"include",body:g}),2);"undefined"!==typeof subscription_modal&&subscription_modal.close("cancelled");d.jumpToEnd()})})}}).render("#paypal-button-container-out-of-credits");window.addEventListener("message",function(b){})};document.head.appendChild(a)}
+function load_paypal_one_time(){var a=document.createElement("script");a.src="https://www.paypal.com/sdk/js?currency=USD&client-id=AYo4E41BoY_tpXUXuZ-5rclkCZATIojkd25Aym1lY7PBVTltF5NRLSmMK8bFWPnyL9iB5wLyaIW9kV-O";a.setAttribute("data-namespace","paypal_one_time");a.async=!0;a.onload=function(){paypal_one_time.Buttons({fundingSource:paypal_one_time.FUNDING.PAYPAL,style:{shape:"rect",color:"silver",height:48},createOrder:function(b,c){return c.order.create({purchase_units:[{amount:{value:document.getElementById("addCreditsAmountSelect").value}}],application_context:{shipping_preference:"NO_SHIPPING"}})},onApprove:function(b,c){return c.order.capture().then(function(e){var f,g;return $jscomp.asyncExecutePromiseGeneratorProgram(function(d){if(1==d.nextAddress)return console.log("Capture result",e,JSON.stringify(e,null,2)),f=document.getElementById("paypal-button-container"),f.innerHTML="<h3>Thank you for your payment!</h3>",g=new FormData,g.append("capture_id",e.purchase_units[0].payments.captures[0].id),d.yield(fetch(app_base_url+"/save_paypal_payment",{method:"POST",credentials:"include",body:g}),2);"undefined"!==typeof subscription_modal&&subscription_modal.close("cancelled");d.jumpToEnd()})})}}).render("#paypal-button-container");window.addEventListener("message",function(b){})};document.head.appendChild(a)}try{load_paypal_subscriptions()}catch(a){console.log("error in load_paypal_subscriptions",a)}try{load_paypal_out_of_credits()}catch(a){console.log("error in load_paypal_out_of_credits",a)}
+try{load_paypal_one_time()}catch(a){console.log("error in load_paypal_one_time",a)}function auto_grow(a){a.style.height="5px";a.style.height=a.scrollHeight+"px"}var search_area="everything";onCategoryPage=!0;var msnry=null;function fragmentFromString(a){return document.createRange().createContextualFragment(a)}
+function chatSubmit(){var a,b;return $jscomp.asyncExecutePromiseGeneratorProgram(function(c){a=Array.from(document.getElementsByClassName("chatbox")).slice(-1)[0];b=a.value;sessionStorage.setItem("homepage_chatbox_text",b);window.location.href="/chat";c.jumpToEnd()})}function textAreaKeyPressHandler(a){13!=a.keyCode||a.shiftKey||(a.preventDefault(),chatSubmit())}function textAreaKeyImagePressHandler(a){13!=a.keyCode||a.shiftKey||(a.preventDefault(),imageSubmit(!1))}
+function searchSubmit(){var a,b;return $jscomp.asyncExecutePromiseGeneratorProgram(function(c){a=Array.from(document.getElementsByClassName("chatbox")).slice(-1)[0];b=a.value;sessionStorage.setItem("homepage_search_text",b);window.location.href="/search";c.jumpToEnd()})}
+function imageSubmit(a){a=void 0===a?!0:a;var b,c,e;return $jscomp.asyncExecutePromiseGeneratorProgram(function(f){(b=a?Array.from(document.getElementsByClassName("chatbox")).slice(-1)[0]:document.getElementById("homepage-image-generator"))&&b.value&&(c=b.value,e={text:c},sessionStorage.setItem("textModelSubmitInputsDict",JSON.stringify(e)),sessionStorage.setItem("textModelSubmitOnload","true"));window.location.href="/machine-learning-model/text2img";f.jumpToEnd()})}var chatbox=Array.from(document.getElementsByClassName("chatbox")).slice(-1)[0];chatbox.focus();;</script>
+
+        
+	</body>
+</html>

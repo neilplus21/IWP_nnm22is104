@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <header id="header">
+        <h3 class="logo">GAME HUB</h3>
+        <nav class="navigation">
+            <a href="home.html">Home</a>
+            <a href="">About</a>
+            <button onclick="loginPage()" class="opbtn">Log In</button>
+        </nav>
+    </header>
+
+    <div class="container">
+            <form action="">
+                <div class="form_box" name="signUpForm">
+                    <h1>Sign Up</h1>
+                    <div class="form_input">
+                        <input type="text" id="email"required>
+                        <label for="email">Email</label>
+                        <span class="icon"><ion-icon name="mail" id="mail"></ion-icon></span>
+                    </div>
+                    <div class="form_input">
+                        <input type="text" id="username" required>
+                        <label for="username">User Name</label>
+                        <span class="icon"><ion-icon name="person" id="person"></ion-icon></span>
+                    </div>
+                    <div class="form_input">
+                        <input type="password" id="password" required>
+                        <span class="icon"><ion-icon name="lock-closed" id="lock-closed"></ion-icon></span>
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="form_input">
+                        <input type="password" id="conf_password" required>
+                        <span class="icon"><ion-icon name="checkmark-done" id="checkmark-done"></ion-icon></span>
+                        <label for="password">Confrirm Password</label>
+                    </div>
+                    <div class="form_input">
+                        <button type="submit" onclick="validate()">Sign Up</button>
+                    </div>
+                    <div class="other">
+                        <h5>Already have an account ? <a href="login.html">Log In</a></h5>
+                        <h5>Forgot Password ? <a href="">click Here</a></h5>
+                    </div>
+                </div>
+            </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
