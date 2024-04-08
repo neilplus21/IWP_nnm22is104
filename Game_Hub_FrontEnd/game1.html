@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #f0f8ff;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        .meow {
+          text-align: center;
+        }
+      </style>
+  </head>
+
+  <body>
+    <div class="meow">
+      <header>Guess a number from 1 to 100</header>
+      <p class="guess"></p>
+      <div>
+        <input type="number" />
+        <button>Check</button>
+      </div>
+      <p>You have <span class="chances">10</span> chances</p>
+    </div>
+
+    <script>
+const input = document.querySelector("input"),
+  guess = document.querySelector(".guess"),
+  checkButton = document.querySelector("button"),
+  r = document.querySelector(".chances");
+
+let randomNum = Math.floor(Math.random() * 101);
+chance = 10;
+
+checkButton.addEventListener("click", () => {
+  chance--;
+  let inputValue = input.value;
+  if (inputValue == randomNum) {
+    [guess.textContent, input.disabled] = ["Congratulations! That's the correct Number", true];
+    [checkButton.textContent] = ["Replay", "#333"];
+  } else if (inputValue > randomNum) {
+    [guess.textContent, r.textContent] = ["Your guess is high", chance];
+  } else if (inputValue < randomNum) {
+    [guess.textContent, r.textContent] = ["Your guess is low", chance];
+  } else {
+    [guess.textContent, r.textContent] = ["Your number is invalid", chance];
+  }
+  if (chance == 0) {
+    [checkButton.textContent, input.disabled, inputValue] = ["Replay", true, ""];
+    [guess.textContent, guess.style.color] = ["You lost the game", "#DE0611"];
+  }
+  if (chance < 0) {
+    window.location.reload();
+  }
+});
+    </script>
+  </body>
+</html>

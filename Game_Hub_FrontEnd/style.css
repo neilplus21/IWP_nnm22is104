@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+*{
+    font-family: "Madimi One", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Madimi+One&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+header{
+    position:static;
+    padding:0px 30px;
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: opacity;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    color: rgb(10, 12, 133);
+    font-size: 2rem;
+}
+
+.navigation a{
+    font-size: 1.1em;
+    color: rgb(10, 12, 133);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    margin-left: 20px;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(10, 12, 133);
+    height: 3px;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+}
+
+body{
+    background-image: url("background1.jpeg");
+    background-size: cover;
+    padding: 20px;
+    
+}
+
+.container{
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.container .game_menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+}
+
+.container .game_menu .box{
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: opacity;
+    border-radius: 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+}
+
+.container .game_menu .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container .play_button{
+    width: fit-content;
+    height: fit-content;
+    font-size: 1.1em;
+    color: rgb(10, 12, 133);
+    outline: none;
+    background-color: white;
+    border: 2px solid rgb(10, 12, 133);
+    border-radius: 10px;
+    margin-left: 1em;
+    transition: 0.5s;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.container .play_button:hover{
+    background-color: rgb(10, 12, 133);
+    color: white;
+}
+
+.playBox{
+    margin-top: 10px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.815);
+    border-radius: 30px;
+}
+div>h2{
+    padding-top: 30px;
+}
+div>p{
+    padding: 20px;
+    text-align: justify;
+}
+iframe{
+    width: 72rem;
+    height: 40rem;
+    margin: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.container .game_menu .prof{
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: opacity;
+    border-radius: 40px;
+    text-align: center;
+    height: fit-content;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+.container .game_menu .prof img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 100px;
+    position: relative;
+}
